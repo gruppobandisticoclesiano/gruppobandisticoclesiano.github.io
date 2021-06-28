@@ -1,0 +1,36 @@
+#map {
+    height: 50vh;
+    width: 80%;
+    margin-left:10%;
+  }
+  
+  .social {
+    padding: 20px;
+    font-size: 50px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa-facebook {
+    color: #3b5998;
+    background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
+    background-size: 55%;
+    background-position: 70% 0;
+    background-repeat: no-repeat;
+  }
+
+.fa-youtube{
+  color: #bb0000;
+}
+
+  .fa-instagram{
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+.fa-envelope{
+  color:gray;
+}

@@ -1,0 +1,121 @@
+.home-col{
+  overflow: hidden;
+  resize: both;
+}
+
+.home-intro {
+  display: table-cell;
+  text-align: center;
+  width: 100%;
+  height: calc(100vh - 75px);
+  padding-top: 5vh;
+}
+.home-intro>p{  
+  font-family: 'Source Serif Pro', serif;    
+  font-size: 2em;
+}
+
+.home-col{
+  background-image: url(../images/banda_home.jpg);  
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;  
+width:99.9%;
+margin-left:0.05vw;
+}
+
+
+#discover{
+  font-size: 1.5em;
+  background-color: #212031;
+  border-color: white;
+  border-width: 3px;
+}
+
+
+.text-cont {
+  margin: 0 auto;
+  position:relative;
+  overflow:hidden;
+}
+
+.text {
+  font-family: 'Zilla Slab', serif;
+  font-size: 4em;
+  display:inline;
+  position:relative;
+  color: white !important;
+  text-shadow: 5px 0 0 #212031, -5px 0 0 #212031, 0 5px 0 #212031, 0 -5px 0 #212031, 3px 3px #212031, -3px -3px 0 #212031, 3px -3px 0 #212031, -3px 3px 0 #212031;
+
+}
+
+.title1 {
+  animation-name: intro;
+  animation-duration:0.4s;
+  animation-iteration-count:1;
+  animation-timing-function:ease;
+  animation-delay:0.5s;
+  animation-fill-mode:backwards;
+}
+
+@media only screen and (max-width: 1200px) {
+  .text {
+    font-family: 'Zilla Slab', serif;
+    font-size: 3em;
+    display:inline;
+    position:relative;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text {
+    font-family: 'Zilla Slab', serif;
+    font-size: 2em;
+    display:inline;
+    position:relative;
+    text-shadow: 3px 0 0 #212031, -3px 0 0 #212031, 0 3px 0 #212031, 0 -3px 0 #212031, 1px 1px #212031, -1px -1px 0 #212031, 1px -1px 0 #212031, -1px 1px 0 #212031;
+  }
+  #discover{
+    font-size: 1em;
+    background-color: #212031;
+    border-color: white;
+    border-width: 3px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .text {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.5em;
+    display:inline;
+    position:relative;
+  }
+  #discover{
+    font-size: 0.8em;
+    background-color: #212031;
+    border-color: white;
+    border-width: 3px;
+  }
+}
+
+@keyframes intro {
+  0% {
+    top:150px;
+  } 
+  98% {
+    top:-5px;
+  }
+  100% {
+    top:0%;
+  }
+}
+
+
+.title4 {
+  animation-name: intro;
+  animation-duration:0.3s;
+  animation-iteration-count:1;
+  animation-timing-function:ease;
+  animation-delay:1s;
+  animation-fill-mode:backwards;
+}

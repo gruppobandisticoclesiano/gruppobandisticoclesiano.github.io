@@ -1,0 +1,16 @@
+
+
+    
+.entrate{
+    margin-top:5vh;
+  }
+
+.card-header{
+    background-color: #8e0b22;
+}
+
+.card-header > h2 {
+  color: #fff;
+  font-family: 'Zilla Slab', serif;
+  font-size: 2em!important;
+}
