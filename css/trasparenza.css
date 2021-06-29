@@ -14,3 +14,7 @@
   font-family: 'Zilla Slab', serif;
   font-size: 2em!important;
 }
+
+.money{
+  text-align: right;
+}
