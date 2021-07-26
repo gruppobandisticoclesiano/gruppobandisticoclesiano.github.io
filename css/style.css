@@ -14,11 +14,25 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-size:1em;
 }
-.nav-item:hover a {
+.nav-item:hover .nav-link {
   color: red !important;
   color: inherit;
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+a{
+  color: #212031;
+}
+
+.nav-drop{  
+  font-family: 'Montserrat', sans-serif;
+  font-size:1em;
+  color: #212031  !important;
+  margin-top: 5px;
+}
+.nav-drop:hover a {
+  color: red  !important;
 }
 
 .divider {
