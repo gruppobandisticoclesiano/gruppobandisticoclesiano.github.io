@@ -57,11 +57,12 @@ body {
 
 .page-content{
   background-color:white;
-  margin-top:10vh;
+  margin-top:5vw;
   padding: 5em;
   margin-left:8vw;
   margin-right:8vw;
   border-radius: 25px;
+  max-width: 2000px;
 }
 
 
@@ -88,7 +89,7 @@ body {
 
   .page-content{
     background-color:white;
-    margin-top:10vh;
+    margin-top:2vw;
     border-radius: 25px;
     padding-left:1.5vw;
     padding-right:1.5vw;
@@ -98,6 +99,12 @@ body {
     width:100%;
   }
   
+}
+
+@media only screen and (min-width: 2500px) {
+  .page-content{
+    margin: 2vw auto;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

@@ -25,6 +25,7 @@ h5{
 .band-img img {
     width: auto;
     height: 45vh;
+    max-height: 500px !important;
     object-fit: cover;
   }
 
