@@ -1,20 +1,30 @@
-
-
-    
-.entrate{
-    margin-top:5vh;
-  }
-
-.card-header{
-    background-color: #8e0b22;
+.entrate {
+  margin-top: 5vh;
 }
 
-.card-header > h2 {
+.card-header {
+  background-color: #8e0b22;
+}
+
+.card-header>h2 {
   color: #fff;
   font-family: 'Zilla Slab', serif;
-  font-size: 2em!important;
+  font-size: 2em !important;
 }
 
-.money{
+.money {
   text-align: right;
+}
+
+table {
+  -ms-word-break: break-all;
+  word-break: break-all;
+
+  /* Non standard for webkit */
+  word-break: break-word;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
