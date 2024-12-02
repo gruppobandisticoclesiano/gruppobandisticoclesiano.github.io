@@ -1,0 +1,47 @@
+
+h2{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; 
+    color: #212031 ;
+    font-size: 3.5em;
+}
+
+.locandina {
+    transition: transform .2s; 
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; 
+    padding-left: 0.5em;
+    padding-right: 0.5em; 
+  }
+
+.locandina:hover{
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+
+  hr{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border: 0;
+    border-top: 4px solid red;
+  }
+
+  p{
+    font-size: 1.35em;
+    vertical-align: middle;
+  }
+
+
+@media only screen and (max-width: 1024px) {    
+  
+    p{
+        font-size: 1.1em;
+      }
+
+      .locandina {
+        transition: transform .2s; 
+      }
+  
+  
+  }
