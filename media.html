@@ -1,251 +1,501 @@
-<!doctype html>
+    <!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Foto, video e registrazioni dei concerti del Gruppo Bandistico Clesiano">
+        <meta name="author" content="Fabio Molignoni">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#212031">
+        
+        <title>Galleria - Gruppo Bandistico Clesiano</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        
+        <!-- Preconnect for performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/media.css">
+    </head>
 
-<html lang="it">
+    <body>
+        <!-- Skip link -->
+        <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
+        
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg py-3 fixed-top" aria-label="Navigazione principale">
+                <div class="container">
+                    <a href="./index.html" class="navbar-brand d-flex align-items-center">
+                        <div class="logo-wrapper">
+                            <img src="./images/logo.png" width="45" height="45" alt="Logo Gruppo Bandistico Clesiano">
+                        </div>
+                        <span class="navbar-name">Gruppo Bandistico Clesiano</span>
+                    </a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Apri menu di navigazione">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </button>
+                
+                <div id="navbarToggler" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./chisiamo.html" class="nav-link"><span>Chi siamo</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Media</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
+                            <li><a href="./media.html" class="dropdown-item">Galleria</a></li>
+                            <li><a href="./concerti.html" class="dropdown-item">Concerti</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./trasparenza.html" class="nav-link"><span>Trasparenza</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contattaci.html" class="nav-link"><span>Contattaci</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
 
-<head>
 
-	<!-- Meta tags -->
-	<meta charset="utf-8">
-	<meta name="author" content="Fabio Molignoni">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="page-hero-overlay"></div>
+            <div class="page-hero-content">
+                <h1 class="page-title">Galleria</h1>
+                <p class="page-subtitle">Foto, video e registrazioni delle nostre esibizioni</p>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section class="media-section">
+            <div class="container">
+                <div class="media-block">
+                    <div class="media-content">
+                        <h2 class="section-title">I nostri momenti migliori</h2>
+                        <p class="section-text">
+                            Concerti, sfilate, inaugurazioni sono solo alcune delle nostre attività. Questa galleria mostra alcuni degli eventi principali che abbiamo svolto negli ultimi anni.
+                        </p>
+                    </div>
+                    <div class="media-visual">
+                        <div class="gallery-carousel">
+                            <div id="img-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./images/media/2019_anniversario.jpg" class="d-block w-100" alt="Celebrazione del ventesimo anniversario della banda nel 2019">
+                                        <button class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                        data-image="./images/media/2019_anniversario.jpg" 
+                                        data-title="Festeggiamo venti anni! (2019)"
+                                        aria-label="Ingrandisci immagine">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="11" cy="11" r="8"/>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                            <line x1="11" y1="8" x2="11" y2="14"/>
+                                            <line x1="8" y1="11" x2="14" y2="11"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <img src="./images/media/2017_thun.jpg" class="d-block w-100" alt="Gemellaggio con la banda di Legnago nel 2017">
+                                    <button class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                    data-image="./images/media/2017_thun.jpg" 
+                                    data-title="Gemellaggio con la banda di Legnago (2017)"
+                                    aria-label="Ingrandisci immagine">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"/>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                        <line x1="11" y1="8" x2="11" y2="14"/>
+                                        <line x1="8" y1="11" x2="14" y2="11"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <img src="./images/media/carnevale.jpg" class="d-block w-100" alt="Partecipazione al Carnevale Clesiano">
+                                <button class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                                data-image="./images/media/carnevale.jpg" 
+                                data-title="Carnevale Clesiano"
+                                aria-label="Ingrandisci immagine">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="./images/media/pomaria.jpg" class="d-block w-100" alt="Esibizione alla manifestazione Pomaria">
+                            <button class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                            data-image="./images/media/pomaria.jpg" 
+                            data-title="Ospiti fissi a Pomaria"
+                            aria-label="Ingrandisci immagine">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                <line x1="11" y1="8" x2="11" y2="14"/>
+                                <line x1="8" y1="11" x2="14" y2="11"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    
+                    <div class="carousel-item">
+                        <img src="./images/media/sfilata.jpg" class="d-block w-100" alt="La banda sfila per le strade del paese">
+                        <button class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                        data-image="./images/media/sfilata.jpg" 
+                        data-title="Sfilate per le vie del paese"
+                        aria-label="Ingrandisci immagine">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            <line x1="11" y1="8" x2="11" y2="14"/>
+                            <line x1="8" y1="11" x2="14" y2="11"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="./images/media/2019_chianni.jpg" class="d-block w-100" alt="Trasferta a Chianni nel 2019">
+                    <button class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                    data-image="./images/media/2019_chianni.jpg" 
+                    data-title="Prima trasferta fuori regione: Chianni (2019)"
+                    aria-label="Ingrandisci immagine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/>
+                        <line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="./images/media/palazzo.jpg" class="d-block w-100" alt="Esibizione durante un'inaugurazione">
+                <button class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                data-image="./images/media/palazzo.jpg" 
+                data-title="Inaugurazioni? Noi ci siamo!"
+                aria-label="Ingrandisci immagine">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    <line x1="11" y1="8" x2="11" y2="14"/>
+                    <line x1="8" y1="11" x2="14" y2="11"/>
+                </svg>
+            </button>
+        </div>
+        
+        
+        <div class="carousel-item">
+            <img src="./images/media/slawno_2022.jpeg" class="d-block w-100" alt="Slawno 2022">
+            <button class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal" 
+            data-image="./images/media/slawno_2022.jpeg" 
+            data-title="Concerti in altura (2020)"
+            aria-label="Ingrandisci immagine">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/>
+                <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+        </button>
+    </div>
 
-	<!-- GBC info -->
-	<title>Gruppo Bandistico Clesiano - Media</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <div class="carousel-item">
+        <img src="./images/media/70_2022.jpeg" class="d-block w-100" alt="Settantesimo 2022">
+        <button class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal" 
+        data-image="./images/media/70_2022.jpeg" 
+        data-title="Concerti in altura (2020)"
+        aria-label="Ingrandisci immagine">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+        </svg>
+    </button>
+    </div>
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-	<!-- CSS -->
-	<link type="text/css" rel="stylesheet" href="./css/style.css">
-	<link type="text/css" rel="stylesheet" href="./css/media.css">
+    <div class="carousel-item">
+        <img src="./images/media/reutte_2024.jpg" class="d-block w-100" alt="Reutte 2024">
+        <button class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal" 
+        data-image="./images/media/reutte_2024.jpg" 
+        data-title="Concerti in altura (2020)"
+        aria-label="Ingrandisci immagine">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+        </svg>
+    </button>
+    </div>
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@600;800;900&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:700" rel="stylesheet">
 
-	<!-- Scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"
-		integrity="sha512-lvcHFfj/075LnEasZKOkj1MF6aLlWtmpFEyd/Kc+waRnlulG5er/2fEBA5DBff4BZrcwfvnft0PiAv4cIpkjpw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#img-carousel" data-bs-slide="prev">
+        <span class="carousel-nav-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </span>
+        <span class="visually-hidden">Precedente</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#img-carousel" data-bs-slide="next">
+        <span class="carousel-nav-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+        </span>
+        <span class="visually-hidden">Successivo</span>
+    </button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
 
-	<meta name="description" content="Foto, video e registrazioni dei concerti del Gruppo Bandistico Clesiano">
-</head>
+    <!-- Video: Storia Bandista -->
+    <section class="media-section media-section-alt">
+        <div class="container">
+            <div class="media-block media-block-reverse">
+                <div class="media-content">
+                    <h2 class="section-title">Come si diventa bandisti?</h2>
+                    <p class="section-text">
+                        Studio, dedizione e tanta passione per la musica! Abbiamo raccontato la storia di due allievi in questo video, partendo dai primi giorni di lezioni e arrivando al tanto atteso primo concerto.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=DI1BWvurWYI" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        <span>Guarda su YouTube</span>
+                    </a>
+                </div>
+                <div class="media-visual">
+                    <div class="video-wrapper">
+                        <iframe 
+                        src="https://www.youtube.com/embed/DI1BWvurWYI" 
+                        title="Come si diventa bandisti - Documentario del Gruppo Bandistico Clesiano"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
-<body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm fixed-top">
-		<div class="container">
-			<a href="./index.html" class="navbar-brand">
-				<!-- Logo Image -->
-				<img src="./images/logo.png" width="45" alt="" class="d-inline-block align-middle mr-2">
-				<!-- Logo Text -->
-				<span class="navbar-name font-weight-bold">Gruppo Bandistico Clesiano</span>
-			</a>
+    <!-- Video: Musicanti di Brema -->
+    <section class="media-section">
+        <div class="container">
+            <div class="media-block">
+                <div class="media-content">
+                    <h2 class="section-title">I Musicanti di Brema</h2>
+                    <p class="section-text">
+                        Uno dei nostri progetti più ambiziosi: la famosa storia dei quattro animali musicisti raccontata alternando musica e dialoghi. L'evento è stato impreziosito da "Dancing Soul", corpo di ballo che si è occupato delle coreografie.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=Hw6cTgrMSDU" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        <span>Guarda lo spettacolo completo</span>
+                    </a>
+                </div>
+                <div class="media-visual">
+                    <div class="video-wrapper">
+                        <iframe 
+                        src="https://www.youtube.com/embed/Hw6cTgrMSDU" 
+                        title="I Musicanti di Brema - Spettacolo del Gruppo Bandistico Clesiano"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-				aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <!-- Video: Playlist -->
+    <section class="media-section media-section-alt">
+        <div class="container">
+            <div class="media-block media-block-reverse">
+                <div class="media-content">
+                    <h2 class="section-title">Le nostre registrazioni</h2>
+                    <p class="section-text">
+                        Da <em>"Rosen aus dem Süden"</em> a <em>"Imagine"</em>, passando per <em>"Soul Bossa Nova"</em> ed arrivando a <em>"Abba Gold"</em> e <em>"C'era una volta il West"</em>: il nostro repertorio è molto vasto!
+                    </p>
+                    <a href="https://www.youtube.com/playlist?list=PLK6cdpySf0qcgxrWTnjbierRy0VMYOdAz" target="_blank" rel="noopener noreferrer" class="video-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        <span>Ascolta la playlist completa</span>
+                    </a>
+                </div>
+                <div class="media-visual">
+                    <div class="video-wrapper">
+                        <iframe 
+                        src="https://www.youtube.com/embed/videoseries?list=PLK6cdpySf0qcgxrWTnjbierRy0VMYOdAz" 
+                        title="Playlist delle registrazioni del Gruppo Bandistico Clesiano"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
-			<div id="navbarToggler" class="collapse navbar-collapse">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Associazione
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li class="nav-drop"><a href="./chisiamo.html" class="">Chi siamo</a></li>
-							<li class="nav-drop"><a href="./concerti.html" class="">I nostri concerti</a></li>
-						</ul>
-					</li>
-					<li class="nav-item"><a href="./media.html" class="nav-link">Media</a></li>
-					<li class="nav-item"><a href="./trasparenza.html" class="nav-link">Trasparenza</a></li>
-					<li class="nav-item"><a href="./contattaci.html" class="nav-link">Contattaci</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- Title -->
-	<div class="divider">
-	</div>
-	<h2 class="sec-title">Media</h2>
+    <!-- YouTube CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                    </svg>
+                </div>
+                <h2>Vuoi vedere altri video?</h2>
+                <p>Iscriviti al nostro canale YouTube per non perdere nessuna esibizione</p>
+                <a href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw" target="_blank" rel="noopener noreferrer" class="btn-cta btn-youtube">
+                    <span>Vai al canale YouTube</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
 
-	<div class="page-content">
-		<!-- Images-->
-		<div class="row">
-			<div class="col-xs-12 col-md-6 order-md-1 order-2">
-				<div id="img-carousel" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-						<div class="carousel-item band-img active">
-							<img src="./images/media/2019_anniversario.jpg" class="d-block w-100" data-interval="2000"
-								alt="">
-							<div class="carousel-caption">
-								<h5>2019: festeggiamo venti anni!</h5>
-							</div>
-						</div>
-						<div class="carousel-item band-img">
-							<img src="./images/media/2017_thun.jpg" class="d-block w-100" data-interval="2000" alt="">
-							<div class="carousel-caption">
-								<h5>Gemellaggio con la banda di Legnago, 2017</h5>
-							</div>
-						</div>
-						<div class="carousel-item band-img">
-							<img src="./images/media/carnevale.jpg" class="d-block w-100" data-interval="2000" alt="">
-							<div class="carousel-caption">
-								<h5>Una delle tante partecipazioni al Carnevale Clesiano</h5>
-							</div>
-						</div>
-						<div class="carousel-item band-img">
-							<img src="./images/media/pomaria.jpg" class="d-block w-100" data-interval="2000" alt="">
-							<div class="carousel-caption">
-								<h5>Ospiti fissi a Pomaria</h5>
-							</div>
-						</div>
-						<div class="carousel-item band-img">
-							<img src="./images/media/sposi.jpg" class="d-block w-100" data-interval="2000" alt="">
-							<div class="carousel-caption">
-								<h5>Anche i bandisti si sposano 👰</h5>
-							</div>
-						</div>
-						<div class="carousel-item band-img">
-							<img src="./images/media/sfilata.jpg" class="d-block w-100" data-interval="2000" alt="">
-							<div class="carousel-caption">
-								<h5>Ci avete visti sfilare per le strade di qualche paese?</h5>
-							</div>
-						</div>
-						<div class="carousel-item band-img">
-							<img src="./images/media/2019_chianni.jpg" class="d-block w-100" data-interval="2000"
-								alt="">
-							<div class="carousel-caption">
-								<h5>Una delle nostre prime trasferte fuori regione: Chianni 2019</h5>
-							</div>
-						</div>
-						<div class="carousel-item band-img">
-							<img src="./images/media/palazzo.jpg" class="d-block w-100" data-interval="2000" alt="">
-							<div class="carousel-caption">
-								<h5>Inaugurazioni? Noi ci siamo!</h5>
-							</div>
-						</div>
-						<div class="carousel-item band-img">
-							<img src="./images/media/2020_alpini.jpg" class="d-block w-100" data-interval="2000" alt="">
-							<div class="carousel-caption">
-								<h5>Concerti in altura</h5>
-							</div>
-						</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#img-carousel"
-						data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#img-carousel"
-						data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 my-auto order-md-2 order-1">
-				<p>
-					Concerti, sfilate, inaugurazioni sono solo alcune delle nostre attività. Vuoi scoprire di più?
-					Questa galleria mostra alcuni degli eventi principali che abbiamo svolto negli ultimi anni.
-				</p>
-			</div>
-		</div>
+    <div class="modal fade image-modal" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Foto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
 
-		<hr />
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/gruppobandisticoclesiano/" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/gruppobandisticoclesiano" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw" target="_blank" rel="noopener noreferrer" aria-label="Seguici su YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">© 2025 Gruppo Bandistico Clesiano. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
 
-		<!-- Storia bandista -->
-		<div class="row">
-			<div class="col-xs-12 col-md-6 my-auto">
-				<p>
-					Come si diventa bandisti? Studio, dedizione e tanta passione per la musica! Abbiamo provato a
-					raccontare
-					la storia di due allievi in questo video, partendo dai primi giorni di lezioni e arrivando al tanto
-					atteso primo concerto.
-				</p>
-			</div>
-			<div class="col-xs-12 col-md-6">
-				<div class="row video-container">
-					<iframe src="https://www.youtube.com/embed/DI1BWvurWYI" title="YouTube video player" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
+    <script>
+        // Handle modal image display
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageModal = document.getElementById('imageModal');
+            
+            if (imageModal) {
+                imageModal.addEventListener('show.bs.modal', function (event) {
+                    // Button that triggered the modal
+                    const button = event.relatedTarget;
+                    
+                    // Extract info from data-* attributes
+                    const imageSrc = button.getAttribute('data-image');
+                    const imageTitle = button.getAttribute('data-title');
+                    
+                    // Update the modal's content
+                    const modalImage = document.getElementById('modalImage');
+                    const modalTitle = document.getElementById('imageModalLabel');
+                    
+                    if (modalImage && imageSrc) {
+                        modalImage.src = imageSrc;
+                        modalImage.alt = imageTitle || 'Foto galleria';
+                    }
+                    
+                    if (modalTitle && imageTitle) {
+                        modalTitle.textContent = imageTitle;
+                    }
+                });
+                
+                // Clear image when modal closes
+                imageModal.addEventListener('hidden.bs.modal', function () {
+                    const modalImage = document.getElementById('modalImage');
+                    if (modalImage) {
+                        modalImage.src = '';
+                    }
+                });
+            }
+        });
+    </script>
 
-		<hr />
 
-		<!-- Musicanti -->
-		<div class="row">
-			<div class="col-xs-12 col-md-6 order-md-1 order-2">
-				<div class="row video-container">
-					<iframe src="https://www.youtube.com/embed/Hw6cTgrMSDU" title="YouTube video player" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 my-auto order-md-2 order-1">
-				<p>
-					"I musicanti di Brema" rappresenta uno dei nostri progetti più ambiziosi, in cui abbiamo raccontato
-					la famosa storia dei quattro animali musicisti alternando musica e dialoghi. L'evento è stato
-					impreziosito da "Dancing Soul", corpo di ballo che si è occupato delle coreografie. Ve lo siete
-					perso? Nessun problema, questa registrazione comprende l'intero spettacolo.
-				</p>
-			</div>
-		</div>
-
-		<hr />
-
-		<!-- Songs playlist -->
-		<div class="row">
-			<div class="col-xs-12 col-md-6 my-auto">
-				<p>
-					Da <i>"Rosen aus dem Süden"</i> a <i>"Imagine"</i>, passando per <i>"Soul Bossa Nova"</i> ed
-					arrivando a <i>"Abba Gold"</i> e <i>"C'era una volta il West"</i>: il nostro repertorio è molto
-					vasto! In questa playlist vi proponiamo registrazioni di alcuni brani eseguiti durante i nostri
-					concerti.
-				</p>
-			</div>
-			<div class="col-xs-12 col-md-6">
-				<div class="row video-container">
-					<iframe src="https://www.youtube.com/embed/videoseries?list=PLK6cdpySf0qcgxrWTnjbierRy0VMYOdAz"
-						title="YouTube video player" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Footer -->
-	<div class="footer-basic">
-		<footer>
-			<hr id="footer-div" />
-			<div class="row">
-				<div class="col-md-12 footer-social">
-					<a target="_blank" href="https://www.instagram.com/gruppobandisticoclesiano/"> <i
-							class="icon ion-social-instagram"></i></a>
-					<a href="https://www.facebook.com/gruppobandisticoclesiano" target="_blank"><i
-							class="icon ion-social-facebook"></i></a>
-					<a target="_blank" href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw"><i
-							class="icon ion-social-youtube"></i></a>
-				</div>
-			</div>
-			<p class="copyright">Gruppo Bandistico Clesiano</p>
-		</footer>
-	</div>
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-		crossorigin="anonymous"></script>
-</body>
-
-</html>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    </body>
+    </html>

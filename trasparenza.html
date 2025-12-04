@@ -1,386 +1,508 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="it">
-
 <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Dati relativi ai contributi pubblici e privati ricevuti dal Gruppo Bandistico Clesiano">
+    <meta name="author" content="Fabio Molignoni">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#212031">
 
-	<!-- Meta tags -->
-	<meta charset="utf-8">
-	<meta name="author" content="Fabio Molignoni">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trasparenza - Gruppo Bandistico Clesiano</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-	<!-- GBC info -->
-	<title>Gruppo Bandistico Clesiano - Trasparenza</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-	<!-- CSS -->
-	<link type="text/css" rel="stylesheet" href="./css/style.css">
-	<link type="text/css" rel="stylesheet" href="./css/trasparenza.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@600;800;900&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:700" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
 
-	<meta name="description" content="Dati relativi ai contributi pubblici ricevuti dal Gruppo Bandistico Clesiano.">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/trasparenza.css">
 </head>
 
 <body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm fixed-top">
-		<div class="container">
-			<a href="./index.html" class="navbar-brand">
-				<!-- Logo Image -->
-				<img src="./images/logo.png" width="45" alt="" class="d-inline-block align-middle mr-2">
-				<!-- Logo Text -->
-				<span class="navbar-name font-weight-bold">Gruppo Bandistico Clesiano</span>
-			</a>
+    <!-- Skip link -->
+    <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-				aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <!-- Navbar -->
+   <header>
+        <nav class="navbar navbar-expand-lg py-3 fixed-top" aria-label="Navigazione principale">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand d-flex align-items-center">
+                    <div class="logo-wrapper">
+                        <img src="./images/logo.png" width="45" height="45" alt="Logo Gruppo Bandistico Clesiano">
+                    </div>
+                    <span class="navbar-name">Gruppo Bandistico Clesiano</span>
+                </a>
 
-			<div id="navbarToggler" class="collapse navbar-collapse">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Associazione
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li class="nav-drop"><a href="./chisiamo.html" class="">Chi siamo</a></li>
-							<li class="nav-drop"><a href="./concerti.html" class="">I nostri concerti</a></li>
-						</ul>
-					</li>
-					<li class="nav-item"><a href="./media.html" class="nav-link">Media</a></li>
-					<li class="nav-item"><a href="./trasparenza.html" class="nav-link">Trasparenza</a></li>
-					<li class="nav-item"><a href="./contattaci.html" class="nav-link">Contattaci</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- Title -->
-	<div class="divider">
-	</div>
-	<h2 class="sec-title">Trasparenza</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Apri menu di navigazione">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </button>
 
-	<!-- Transparency data -->
-	<div class="page-content">
-		<div class="row expl">
-			<p>Questa sezione contiene informazioni riguardanti gli aiuti e i contributi privati e pubblici di
-				cui l'associazione ha usufruito nel corso dell'esercizio della propria attività.</p>
-		</div>
+                <div id="navbarToggler" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./chisiamo.html" class="nav-link"><span>Chi siamo</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Media</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
+                                <li><a href="./media.html" class="dropdown-item">Galleria</a></li>
+                                <li><a href="./concerti.html" class="dropdown-item">Concerti</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./trasparenza.html" class="nav-link"><span>Trasparenza</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contattaci.html" class="nav-link"><span>Contattaci</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-		<!-- Dati 2024 -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="card entrate">
-					<div class="card-header" data-bs-toggle="collapse" href="#trans2024" role="button"
-						aria-expanded="false" aria-controls="trans2024">
-						<h2>Contributi ricevuti dall'associazione nel corso dell'anno sociale 2024 <svg
-								xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-								class="bi bi-arrow-down" viewBox="0 0 16 16">
-								<path fill-rule="evenodd"
-									d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-							</svg></h2>
-					</div>
 
-					<div class="card-body collapse show multi-collapse" id="trans2024">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Denominazione</th>
-									<th scope="col">Soggetto erogante</th>
-									<th scope="col" class="money">Somma incassata</th>
-									<th scope="col">Data di incasso</th>
-									<th scope="col">Causale</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Gruppo Bandistico Clesiano APS<br>CF: 01834560227</td>
-									<td>Comune di Cles</td>
-									<td class="money">Non quantificabile</td>
-									<td>01/07/24</td>
-									<td>Concessione gratuita di occupazione ed utilizzo di sala prove, situata in via
-										Doss di Pez 22, come da accordi di convenzione stipulata il 01/07/24</td>
-								</tr>								
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="page-hero-overlay"></div>
+            <div class="page-hero-content">
+                <h1 class="page-title">Trasparenza</h1>
+                <p class="page-subtitle">Contributi ricevuti</p>
+            </div>
+        </section>
 
-		<!-- Dati 2023 -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="card entrate">
-					<div class="card-header" data-bs-toggle="collapse" href="#trans2023" role="button"
-						aria-expanded="false" aria-controls="trans2023">
-						<h2>Contributi ricevuti dall'associazione nel corso dell'anno sociale 2023 <svg
-								xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-								class="bi bi-arrow-down" viewBox="0 0 16 16">
-								<path fill-rule="evenodd"
-									d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-							</svg></h2>
-					</div>
+        <!-- Introduction -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-card">
+                    <div class="intro-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <p class="intro-text">
+                        In questa sezione sono riportate le informazioni riguardanti i contributi di cui l'associazione ha usufruito nel corso dell'esercizio della propria attività, in ottemperanza agli obblighi di trasparenza previsti dalla normativa vigente.
+                    </p>
+                    <div class="association-info">
+                        <span class="info-badge">
+                            <strong>Gruppo Bandistico Clesiano APS</strong>
+                        </span>
+                        <span class="info-badge">
+                            CF: 01834560227
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					<div class="card-body collapse show multi-collapse" id="trans2023">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Denominazione</th>
-									<th scope="col">Soggetto erogante</th>
-									<th scope="col" class="money">Somma incassata</th>
-									<th scope="col">Data di incasso</th>
-									<th scope="col">Causale</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Gruppo Bandistico Clesiano APS<br>CF: 01834560227</td>
-									<td>Comune di Cles</td>
-									<td class="money">Non quantificabile</td>
-									<td>27/04/23</td>
-									<td>Concessione gratuita di occupazione ed utilizzo di sala prove, situata in via
-										Doss di Pez 22, come da accordi di convenzione stipulata il 27/04/23</td>
-								</tr>								
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
+        <!-- Transparency Data -->
+        <section class="transparency-section">
+            <div class="container">
+                
+                <!-- Year 2024 -->
+                <div class="year-accordion">
+                    <button class="accordion-trigger" type="button" data-bs-toggle="collapse" data-bs-target="#trans2024" aria-expanded="true" aria-controls="trans2024">
+                        <div class="accordion-year">
+                            <span class="year-badge">2024</span>
+                            <span class="year-title">Contributi anno sociale 2024</span>
+                        </div>
+                        <span class="accordion-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="collapse show" id="trans2024">
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Soggetto erogante</th>
+                                            <th scope="col">Somma incassata</th>
+                                            <th scope="col">Data</th>
+                                            <th scope="col">Causale</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Soggetto erogante">
+                                                <span class="entity-name">Comune di Cles</span>
+                                            </td>
+                                            <td data-label="Somma incassata">
+                                                <span class="amount amount-special">Non quantificabile</span>
+                                            </td>
+                                            <td data-label="Data">
+                                                <span class="date">01/07/2024</span>
+                                            </td>
+                                            <td data-label="Causale">
+                                                Concessione gratuita di occupazione ed utilizzo di sala prove, situata in via Doss di Pez 22, come da accordi di convenzione stipulata il 01/07/24
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<!-- Dati 2022 -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="card entrate">
-					<div class="card-header" data-bs-toggle="collapse" href="#trans2022" role="button"
-						aria-expanded="false" aria-controls="trans2022">
-						<h2>Contributi ricevuti dall'associazione nel corso dell'anno sociale 2022 <svg
-								xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-								class="bi bi-arrow-down" viewBox="0 0 16 16">
-								<path fill-rule="evenodd"
-									d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-							</svg></h2>
-					</div>
+                <!-- Year 2023 -->
+                <div class="year-accordion">
+                    <button class="accordion-trigger" type="button" data-bs-toggle="collapse" data-bs-target="#trans2023" aria-expanded="false" aria-controls="trans2023">
+                        <div class="accordion-year">
+                            <span class="year-badge">2023</span>
+                            <span class="year-title">Contributi anno sociale 2023</span>
+                        </div>
+                        <span class="accordion-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="collapse" id="trans2023">
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Soggetto erogante</th>
+                                            <th scope="col">Somma incassata</th>
+                                            <th scope="col">Data</th>
+                                            <th scope="col">Causale</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Soggetto erogante">
+                                                <span class="entity-name">Comune di Cles</span>
+                                            </td>
+                                            <td data-label="Somma incassata">
+                                                <span class="amount amount-special">Non quantificabile</span>
+                                            </td>
+                                            <td data-label="Data">
+                                                <span class="date">27/04/2023</span>
+                                            </td>
+                                            <td data-label="Causale">
+                                                Concessione gratuita di occupazione ed utilizzo di sala prove, situata in via Doss di Pez 22, come da accordi di convenzione stipulata il 27/04/23
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					<div class="card-body collapse show multi-collapse" id="trans2022">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Denominazione</th>
-									<th scope="col">Soggetto erogante</th>
-									<th scope="col" class="money">Somma incassata</th>
-									<th scope="col">Data di incasso</th>
-									<th scope="col">Causale</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Gruppo Bandistico Clesiano APS<br>CF: 01834560227</td>
-									<td>Comune di Cles</td>
-									<td class="money">Non quantificabile</td>
-									<td>01/01/22</td>
-									<td>Concessione gratuita di occupazione ed utilizzo di sala prove, situata in via
-										Doss di Pez 22, come da accordi di convenzione stipulata il 01/01/19</td>
-								</tr>
-								<tr>
-									<td>Gruppo Bandistico Clesiano APS<br>CF: 01834560227</td>
-									<td>Comune di Cles</td>
-									<td class="money">2500,00€</td>
-									<td>21/01/22</td>
-									<td>Saldo contributo ordinario anno 2021 come da convenzione con Comune di Cles
-										stipulata il 01/01/19</td>
-								</tr>
-								<tr>
-									<td>Gruppo Bandistico Clesiano APS<br>CF: 01834560227</td>
-									<td>Comune di Cles</td>
-									<td class="money">1999,40€</td>
-									<td>17/03/22</td>
-									<td>Rimborso progetto "Piano giovani di zona" - Call anno 2021</td>
-								</tr>
-								<tr>
-									<td>Gruppo Bandistico Clesiano APS<br>CF: 01834560227</td>
-									<td>Comune di Cles</td>
-									<td class="money">2500,00€</td>
-									<td>21/09/22</td>
-									<td>Acconto contributo ordinario anno 2022 come da convenzione con Comune di Cles
-										stipulata il 01/01/19
-									</td>
-								</tr>
-								<tr>
-									<td>Gruppo Bandistico Clesiano APS<br>CF: 01834560227</td>
-									<td>Comune di Cles</td>
-									<td class="money">2500,00€</td>
-									<td>22/12/22</td>
-									<td>Saldo contributo ordinario anno 2022 come da convenzione con Comune di Cles
-										stipulata il 01/01/19</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
+                <!-- Year 2022 -->
+                <div class="year-accordion">
+                    <button class="accordion-trigger" type="button" data-bs-toggle="collapse" data-bs-target="#trans2022" aria-expanded="false" aria-controls="trans2022">
+                        <div class="accordion-year">
+                            <span class="year-badge">2022</span>
+                            <span class="year-title">Contributi anno sociale 2022</span>
+                        </div>
+                        <span class="accordion-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="collapse" id="trans2022">
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Soggetto erogante</th>
+                                            <th scope="col">Somma incassata</th>
+                                            <th scope="col">Data</th>
+                                            <th scope="col">Causale</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Soggetto erogante">
+                                                <span class="entity-name">Comune di Cles</span>
+                                            </td>
+                                            <td data-label="Somma incassata">
+                                                <span class="amount amount-special">Non quantificabile</span>
+                                            </td>
+                                            <td data-label="Data">
+                                                <span class="date">01/01/2022</span>
+                                            </td>
+                                            <td data-label="Causale">
+                                                Concessione gratuita di occupazione ed utilizzo di sala prove, situata in via Doss di Pez 22, come da accordi di convenzione stipulata il 01/01/19
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Soggetto erogante">
+                                                <span class="entity-name">Comune di Cles</span>
+                                            </td>
+                                            <td data-label="Somma incassata">
+                                                <span class="amount">€ 2.500,00</span>
+                                            </td>
+                                            <td data-label="Data">
+                                                <span class="date">21/01/2022</span>
+                                            </td>
+                                            <td data-label="Causale">
+                                                Saldo contributo ordinario anno 2021 come da convenzione con Comune di Cles stipulata il 01/01/19
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Soggetto erogante">
+                                                <span class="entity-name">Comune di Cles</span>
+                                            </td>
+                                            <td data-label="Somma incassata">
+                                                <span class="amount">€ 1.999,40</span>
+                                            </td>
+                                            <td data-label="Data">
+                                                <span class="date">17/03/2022</span>
+                                            </td>
+                                            <td data-label="Causale">
+                                                Rimborso progetto "Piano giovani di zona" - Call anno 2021
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Soggetto erogante">
+                                                <span class="entity-name">Comune di Cles</span>
+                                            </td>
+                                            <td data-label="Somma incassata">
+                                                <span class="amount">€ 2.500,00</span>
+                                            </td>
+                                            <td data-label="Data">
+                                                <span class="date">21/09/2022</span>
+                                            </td>
+                                            <td data-label="Causale">
+                                                Acconto contributo ordinario anno 2022 come da convenzione con Comune di Cles stipulata il 01/01/19
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Soggetto erogante">
+                                                <span class="entity-name">Comune di Cles</span>
+                                            </td>
+                                            <td data-label="Somma incassata">
+                                                <span class="amount">€ 2.500,00</span>
+                                            </td>
+                                            <td data-label="Data">
+                                                <span class="date">22/12/2022</span>
+                                            </td>
+                                            <td data-label="Causale">
+                                                Saldo contributo ordinario anno 2022 come da convenzione con Comune di Cles stipulata il 01/01/19
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td><strong>Totale contributi monetari 2022</strong></td>
+                                            <td><span class="amount amount-total">€ 9.499,40</span></td>
+                                            <td colspan="2"></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<!-- Dati 2021 -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="card entrate">
-					<div class="card-header" data-bs-toggle="collapse" href="#trans2021" role="button"
-						aria-expanded="false" aria-controls="trans2021">
-						<h2>Entrate effettive relative all'anno sociale 2021 <svg xmlns="http://www.w3.org/2000/svg"
-								width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-								<path fill-rule="evenodd"
-									d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-							</svg></h2>
-					</div>
+                <!-- Year 2021 -->
+                <div class="year-accordion">
+                    <button class="accordion-trigger" type="button" data-bs-toggle="collapse" data-bs-target="#trans2021" aria-expanded="false" aria-controls="trans2021">
+                        <div class="accordion-year">
+                            <span class="year-badge">2021</span>
+                            <span class="year-title">Entrate effettive anno sociale 2021</span>
+                        </div>
+                        <span class="accordion-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="collapse" id="trans2021">
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table class="data-table data-table-simple">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Entrata</th>
+                                            <th scope="col" class="text-end">Importo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Entrata">Tesseramenti</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 160,00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Entrata">Quote per corsi di formazione</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 4.680,00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Entrata">Contributi da enti pubblici</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 4.000,00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Entrata">Contributo ordinario da convenzione Comune di Cles</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 5.000,00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Entrata">Contributi da enti privati</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 1.000,00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Entrata">Compensi relativi a prestazioni musicali</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 550,00</span></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td><strong>Totale entrate anno 2021</strong></td>
+                                            <td class="text-end"><span class="amount amount-total">€ 15.390,00</span></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="note-card">
+                                <div class="note-icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        ircle cx="12" cy="12" r="10"/>
+                                        <line x1="12" y1="16" x2="12" y2="12"/>
+                                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                                    </svg>
+                                </div>
+                                <p>Concessione <strong>gratuita</strong> di occupazione ed utilizzo di sala prove, situata in via Doss di Pez 22, come da accordi di convenzione tra l'associazione e il Comune di Cles, per un valore equivalente di <strong>€ 4.900,00</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					<div class="card-body collapse show multi-collapse" id="trans2021">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Entrata</th>
-									<th scope="col" class="money">Euro</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Tesseramenti</td>
-									<td class="money">160</td>
-								</tr>
-								<tr>
-									<td>Quote per corsi di formazione</td>
-									<td class="money">4680</td>
-								</tr>
-								<tr>
-									<td>Contributi da enti pubblici</td>
-									<td class="money">4000</td>
-								</tr>
-								<tr>
-									<td>Contributi ordinario come da convenzione con Comune di Cles</td>
-									<td class="money">5000</td>
-								</tr>
-								<tr>
-									<td>Contributi da enti privati</td>
-									<td class="money">1000</td>
-								</tr>
-								<tr>
-									<td>Compensi relativi a prestazioni musicali</td>
-									<td class="money">550</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td><b>Totale entrate per l'anno 2021</b></td>
-									<td class="money"><b>15390</b></td>
-								</tr>
-							</tfoot>
-						</table>
-						Concessione <b>gratuita</b> di occupazione ed utilizzo di sala prove, situata in via Doss di Pez
-						22, come da accordi di convenzione tra l'associazione e il Comune di Cles, per un valore
-						equivalente di <b>4900 euro</b>.
-					</div>
-				</div>
-			</div>
-		</div>
+                <!-- Year 2020 -->
+                <div class="year-accordion">
+                    <button class="accordion-trigger" type="button" data-bs-toggle="collapse" data-bs-target="#trans2020" aria-expanded="false" aria-controls="trans2020">
+                        <div class="accordion-year">
+                            <span class="year-badge">2020</span>
+                            <span class="year-title">Entrate effettive anno sociale 2020</span>
+                        </div>
+                        <span class="accordion-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="collapse" id="trans2020">
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table class="data-table data-table-simple">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Entrata</th>
+                                            <th scope="col" class="text-end">Importo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Entrata">Tesseramenti</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 160,00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Entrata">Quote per corsi di formazione</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 4.380,00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Entrata">Contributi da enti pubblici</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 6.252,00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Entrata">Contributo ordinario da convenzione Comune di Cles</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 5.000,00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Entrata">Contributi da enti privati</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 1.000,00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Entrata">Compensi relativi a prestazioni musicali</td>
+                                            <td data-label="Importo" class="text-end"><span class="amount">€ 1.100,00</span></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td><strong>Totale entrate anno 2020</strong></td>
+                                            <td class="text-end"><span class="amount amount-total">€ 17.892,00</span></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="note-card">
+                                <div class="note-icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        ircle cx="12" cy="12" r="10"/>
+                                        <line x1="12" y1="16" x2="12" y2="12"/>
+                                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                                    </svg>
+                                </div>
+                                <p>Concessione <strong>gratuita</strong> di occupazione ed utilizzo di sala prove, situata in via Doss di Pez 22, come da accordi di convenzione tra l'associazione e il Comune di Cles, per un valore equivalente di <strong>€ 4.900,00</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<!-- Dati 2020 -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="card entrate">
-					<div class="card-header" data-bs-toggle="collapse" href="#trans2020" role="button"
-						aria-expanded="false" aria-controls="trans2020">
-						<h2>Entrate effettive relative all'anno sociale 2020 <svg xmlns="http://www.w3.org/2000/svg"
-								width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-								<path fill-rule="evenodd"
-									d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-							</svg></h2>
-					</div>
+            </div>
+        </section>
+    </main>
 
-					<div class="card-body collapse show multi-collapse" id="trans2020">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Entrata</th>
-									<th scope="col" class="money">Euro</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Tesseramenti</td>
-									<td class="money">160</td>
-								</tr>
-								<tr>
-									<td>Quote per corsi di formazione</td>
-									<td class="money">4380</td>
-								</tr>
-								<tr>
-									<td>Contributi da enti pubblici</td>
-									<td class="money">6252</td>
-								</tr>
-								<tr>
-									<td>Contributi ordinario come da convenzione con Comune di Cles</td>
-									<td class="money">5000</td>
-								</tr>
-								<tr>
-									<td>Contributi da enti privati</td>
-									<td class="money">1000</td>
-								</tr>
-								<tr>
-									<td>Compensi relativi a prestazioni musicali</td>
-									<td class="money">1100</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td><b>Totale entrate per l'anno 2020</b></td>
-									<td class="money"><b>17892</b></td>
-								</tr>
-							</tfoot>
-						</table>
-						Concessione <b>gratuita</b> di occupazione ed utilizzo di sala prove, situata in via Doss di Pez
-						22, come da accordi di convenzione tra l'associazione e il Comune di Cles, per un valore
-						equivalente di <b>4900 euro</b>.
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/gruppobandisticoclesiano/" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/gruppobandisticoclesiano" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw" target="_blank" rel="noopener noreferrer" aria-label="Seguici su YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">© 2025 Gruppo Bandistico Clesiano. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
 
-	<!-- Footer -->
-	<div class="footer-basic">
-		<footer>
-			<hr id="footer-div" />
-			<div class="row">
-				<div class="col-md-12 footer-social">
-					<a target="_blank" href="https://www.instagram.com/gruppobandisticoclesiano/"> <i
-							class="icon ion-social-instagram"></i></a>
-					<a href="https://www.facebook.com/gruppobandisticoclesiano" target="_blank"><i
-							class="icon ion-social-facebook"></i></a>
-					<a target="_blank" href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw"><i
-							class="icon ion-social-youtube"></i></a>
-				</div>
-			</div>
-			<p class="copyright">Gruppo Bandistico Clesiano</p>
-		</footer>
-	</div>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-		crossorigin="anonymous"></script>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>

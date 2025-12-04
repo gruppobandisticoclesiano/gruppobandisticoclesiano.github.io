@@ -1,205 +1,790 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="it">
-
 <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Locandine e manifesti dei concerti del Gruppo Bandistico Clesiano dal 2013 ad oggi">
+    <meta name="author" content="Fabio Molignoni">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#212031">
 
-	<!-- Meta tags -->
-	<meta charset="utf-8">
-	<meta name="author" content="Fabio Molignoni">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I nostri concerti - Gruppo Bandistico Clesiano</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-	<!-- GBC info -->
-	<title>Gruppo Bandistico Clesiano - Prossimi concerti</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-	<!-- CSS -->
-	<link type="text/css" rel="stylesheet" href="./css/style.css">
-	<link type="text/css" rel="stylesheet" href="./css/concerti.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@600;800;900&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:700" rel="stylesheet">
-
-	<!-- Scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"
-		integrity="sha512-lvcHFfj/075LnEasZKOkj1MF6aLlWtmpFEyd/Kc+waRnlulG5er/2fEBA5DBff4BZrcwfvnft0PiAv4cIpkjpw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<meta name="description" content="Lista completa di tutti i prossimi concerti del Gruppo Bandistico Clesiano">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/concerti.css">
 </head>
 
 <body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm fixed-top">
-		<div class="container">
-			<a href="./index.html" class="navbar-brand">
-				<!-- Logo Image -->
-				<img src="./images/logo.png" width="45" alt="" class="d-inline-block align-middle mr-2">
-				<!-- Logo Text -->
-				<span class="navbar-name font-weight-bold">Gruppo Bandistico Clesiano</span>
-			</a>
+    <!-- Skip link -->
+    <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-				aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg py-3 fixed-top" aria-label="Navigazione principale">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand d-flex align-items-center">
+                    <div class="logo-wrapper">
+                        <img src="./images/logo.png" width="45" height="45" alt="Logo Gruppo Bandistico Clesiano">
+                    </div>
+                    <span class="navbar-name">Gruppo Bandistico Clesiano</span>
+                </a>
 
-			<div id="navbarToggler" class="collapse navbar-collapse">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Associazione
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li class="nav-drop"><a href="./chisiamo.html" class="">Chi siamo</a></li>
-							<li class="nav-drop"><a href="./concerti.html" class="">I nostri concerti</a></li>
-						</ul>
-					</li>
-					<li class="nav-item"><a href="./media.html" class="nav-link">Media</a></li>
-					<li class="nav-item"><a href="./trasparenza.html" class="nav-link">Trasparenza</a></li>
-					<li class="nav-item"><a href="./contattaci.html" class="nav-link">Contattaci</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Apri menu di navigazione">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </button>
 
-	<!-- Title -->
-	<div class="divider">
-	</div>
+                <div id="navbarToggler" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./chisiamo.html" class="nav-link"><span>Chi siamo</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Media</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
+                                <li><a href="./media.html" class="dropdown-item">Galleria</a></li>
+                                <li><a href="./concerti.html" class="dropdown-item">Concerti</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./trasparenza.html" class="nav-link"><span>Trasparenza</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contattaci.html" class="nav-link"><span>Contattaci</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-	<!-- Content -->
-	<h2 class="sec-title">I nostri concerti</h2>
-	<div class="page-content">
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="page-hero-overlay"></div>
+            <div class="page-hero-content">
+                <h1 class="page-title">I nostri concerti</h1>
+                <p class="page-subtitle">Alcune locandine dei nostri concerti</p>
+            </div>
+        </section>
 
-		<!-- Contatti -->
-		<div class="row expl">
-			<p>In questa pagina puoi trovare le locandine di alcuni concerti che abbiamo svolto nel corso degli anni a Cles (e non solo!)</p>
-		</div>
+        <!-- Introduction -->
+<section class="intro-section">
+    <div class="container">
+        <div class="intro-card">
+            <div class="intro-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+            </div>
+            <p class="intro-text">
+                In questa pagina puoi trovare le locandine di alcuni concerti che abbiamo svolto nel corso degli anni a Cles e in altre località.
+            </p>
+        </div>
+    </div>
+</section>
 
-		<!-- 2024 -->
-		<div class="row">
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2025_reutte.png" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2025_primavera.png" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2024_natale.png" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2024_peller.jpg" class="d-block w-100"  alt="">
-			</div>
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2024_ferragosto.jpg" class="d-block w-100"  alt="">
-			</div>
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2024_primavera.jpg" class="d-block w-100"  alt="">
-			</div>
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2023_natale.png" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2023_ferragosto.png" class="d-block w-100"  alt="">
-			</div>
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2023_primavera.png" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2022_natale.png" class="d-block w-100"  alt="">
-			</div>		
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2022_ferragosto.png" class="d-block w-100"  alt="">
-			</div>
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2022_primavera.png" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2019_natale.jpg" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2019_chianni.png" class="d-block w-100"  alt="">
-			</div>				
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2019_ferragosto.jpg" class="d-block w-100"  alt="">
-			</div>
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2019_arconate.png" class="d-block w-100"  alt="">
-			</div>
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2018_ferragosto.jpg" class="d-block w-100"  alt="">
-			</div>
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2017_legnago.jpg" class="d-block w-100"  alt="">
-			</div>			
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2016_prove.png" class="d-block w-100"  alt="">
-			</div>
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2016_ferragosto.jpg" class="d-block w-100"  alt="">
-			</div>
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2016_natale.jpg" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2015_natale.jpg" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2015_cecilia.jpg" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2015_echi.jpg" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2014_natale.jpg" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2014_cecilia.png" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2014_estrazione.png" class="d-block w-100"  alt="">
-			</div>	
-			<div class="col-sm-6 col-md-2 my-auto locandina">
-				<img src="./images/manifesti/2013_natale.jpg" class="d-block w-100"  alt="">
-			</div>	
-					
-		</div>
+<!-- Gallery Section -->
+<section class="gallery-section">
+    <div class="container">
+        
+        <!-- Year 2025 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2025</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2025_reutte.png" data-title="Concerto Reutte 2025">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2025_reutte.png" alt="Concerto Reutte 2025" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2025_primavera.png" data-title="Concerto di Primavera 2025">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2025_primavera.png" alt="Concerto di Primavera 2025" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Year 2024 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2024</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2024_natale.png" data-title="Concerto di Natale 2024">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2024_natale.png" alt="Concerto di Natale 2024" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2024_peller.jpg" data-title="Concerto Peller 2024">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2024_peller.jpg" alt="Concerto Peller 2024" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2024_ferragosto.jpg" data-title="Concerto di Ferragosto 2024">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2024_ferragosto.jpg" alt="Concerto di Ferragosto 2024" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2024_primavera.jpg" data-title="Concerto di Primavera 2024">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2024_primavera.jpg" alt="Concerto di Primavera 2024" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Year 2023 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2023</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2023_natale.png" data-title="Concerto di Natale 2023">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2023_natale.png" alt="Concerto di Natale 2023" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2023_ferragosto.png" data-title="Concerto di Ferragosto 2023">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2023_ferragosto.png" alt="Concerto di Ferragosto 2023" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2023_primavera.png" data-title="Concerto di Primavera 2023">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2023_primavera.png" alt="Concerto di Primavera 2023" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Year 2022 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2022</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2022_natale.png" data-title="Concerto di Natale 2022">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2022_natale.png" alt="Concerto di Natale 2022" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2022_ferragosto.png" data-title="Concerto di Ferragosto 2022">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2022_ferragosto.png" alt="Concerto di Ferragosto 2022" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2022_primavera.png" data-title="Concerto di Primavera 2022">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2022_primavera.png" alt="Concerto di Primavera 2022" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Year 2019 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2019</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2019_natale.jpg" data-title="Concerto di Natale 2019">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2019_natale.jpg" alt="Concerto di Natale 2019" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2019_chianni.png" data-title="Concerto Chianni 2019">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2019_chianni.png" alt="Concerto Chianni 2019" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2019_ferragosto.jpg" data-title="Concerto di Ferragosto 2019">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2019_ferragosto.jpg" alt="Concerto di Ferragosto 2019" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2019_arconate.png" data-title="Concerto Arconate 2019">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2019_arconate.png" alt="Concerto Arconate 2019" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Year 2018 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2018</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2018_ferragosto.jpg" data-title="Concerto di Ferragosto 2018">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2018_ferragosto.jpg" alt="Concerto di Ferragosto 2018" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Year 2017 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2017</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2017_legnago.jpg" data-title="Concerto Legnago 2017">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2017_legnago.jpg" alt="Concerto Legnago 2017" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Year 2016 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2016</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2016_prove.png" data-title="Concerto Prove 2016">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2016_prove.png" alt="Concerto Prove 2016" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2016_ferragosto.jpg" data-title="Concerto di Ferragosto 2016">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2016_ferragosto.jpg" alt="Concerto di Ferragosto 2016" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2016_natale.jpg" data-title="Concerto di Natale 2016">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2016_natale.jpg" alt="Concerto di Natale 2016" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Year 2015 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2015</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2015_natale.jpg" data-title="Concerto di Natale 2015">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2015_natale.jpg" alt="Concerto di Natale 2015" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2015_cecilia.jpg" data-title="Concerto Santa Cecilia 2015">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2015_cecilia.jpg" alt="Concerto Santa Cecilia 2015" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2015_echi.jpg" data-title="Concerto Echi 2015">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2015_echi.jpg" alt="Concerto Echi 2015" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Year 2014 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2014</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2014_natale.jpg" data-title="Concerto di Natale 2014">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2014_natale.jpg" alt="Concerto di Natale 2014" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2014_cecilia.png" data-title="Concerto Santa Cecilia 2014">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2014_cecilia.png" alt="Concerto Santa Cecilia 2014" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2014_estrazione.png" data-title="Concerto Estrazione 2014">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2014_estrazione.png" alt="Concerto Estrazione 2014" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Year 2013 -->
+        <div class="year-section">
+            <div class="year-header">
+                <span class="year-line"></span>
+                <h2 class="year-title">2013</h2>
+                <span class="year-line"></span>
+            </div>
+            <div class="posters-grid">
+                
+                <div class="poster-card" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster="./images/manifesti/2013_natale.jpg" data-title="Concerto di Natale 2013">
+                    <div class="poster-image">
+                        <img src="./images/manifesti/2013_natale.jpg" alt="Concerto di Natale 2013" loading="lazy">
+                        <div class="poster-overlay">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                   <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/>
+                                    <line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
-	</div>
+<!-- Modal for Expanded View -->
+<div class="modal fade poster-modal" id="posterModal" tabindex="-1" aria-labelledby="posterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="posterModalLabel">Locandina Concerto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="" id="modalPosterImage">
+            </div>
+        </div>
+    </div>
+</div>
 
-	<!-- Footer -->
-	<div class="footer-basic">
-		<footer>
-			<hr id="footer-div" />
-			<div class="row">
-				<div class="col-md-12 footer-social">
-					<a target="_blank" href="https://www.instagram.com/gruppobandisticoclesiano/"> <i
-							class="icon ion-social-instagram"></i></a>
-					<a href="https://www.facebook.com/gruppobandisticoclesiano" target="_blank"><i
-							class="icon ion-social-facebook"></i></a>
-					<a target="_blank" href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw"><i
-							class="icon ion-social-youtube"></i></a>
-				</div>
-			</div>
-			<p class="copyright">Gruppo Bandistico Clesiano</p>
-		</footer>
-	</div>
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-		crossorigin="anonymous"></script>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/gruppobandisticoclesiano/" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/gruppobandisticoclesiano" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw" target="_blank" rel="noopener noreferrer" aria-label="Seguici su YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">© 2025 Gruppo Bandistico Clesiano. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+	<script>
+    // Handle modal poster display
+    document.addEventListener('DOMContentLoaded', function() {
+        const posterModal = document.getElementById('posterModal');
+        
+        if (posterModal) {
+            posterModal.addEventListener('show.bs.modal', function (event) {
+                // Button that triggered the modal
+                const button = event.relatedTarget;
+                
+                // Extract info from data-* attributes
+                const posterSrc = button.getAttribute('data-poster');
+                const posterTitle = button.getAttribute('data-title');
+                
+                // Update the modal's content
+                const modalImage = document.getElementById('modalPosterImage');
+                const modalTitle = document.getElementById('posterModalLabel');
+                
+                if (modalImage && posterSrc) {
+                    modalImage.src = posterSrc;
+                    modalImage.alt = posterTitle || 'Locandina concerto';
+                }
+                
+                if (modalTitle && posterTitle) {
+                    modalTitle.textContent = posterTitle;
+                }
+            });
+            
+            // Clear image when modal closes
+            posterModal.addEventListener('hidden.bs.modal', function () {
+                const modalImage = document.getElementById('modalPosterImage');
+                if (modalImage) {
+                    modalImage.src = '';
+                }
+            });
+        }
+    });
+</script>
+
+
 </body>
-
 </html>

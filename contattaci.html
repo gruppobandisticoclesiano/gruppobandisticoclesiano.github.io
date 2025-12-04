@@ -1,142 +1,247 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="it">
-
 <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Contatta il Gruppo Bandistico Clesiano - Email, social media e sede">
+    <meta name="author" content="Fabio Molignoni">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#212031">
 
-	<!-- Meta tags -->
-	<meta charset="utf-8">
-	<meta name="author" content="Fabio Molignoni">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contattaci - Gruppo Bandistico Clesiano</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-	<!-- GBC info -->
-	<title>Gruppo Bandistico Clesiano - Contattaci</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-	<!-- CSS -->
-	<link type="text/css" rel="stylesheet" href="./css/style.css">
-	<link type="text/css" rel="stylesheet" href="./css/contattaci.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@600;800;900&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:700" rel="stylesheet">
-
-	<!-- Scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"
-		integrity="sha512-lvcHFfj/075LnEasZKOkj1MF6aLlWtmpFEyd/Kc+waRnlulG5er/2fEBA5DBff4BZrcwfvnft0PiAv4cIpkjpw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-	<meta name="description" content="Info e recapiti per contattare il Gruppo Bandistico Clesiano">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contattaci.css">
 </head>
 
 <body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm fixed-top">
-		<div class="container">
-			<a href="./index.html" class="navbar-brand">
-				<!-- Logo Image -->
-				<img src="./images/logo.png" width="45" alt="" class="d-inline-block align-middle mr-2">
-				<!-- Logo Text -->
-				<span class="navbar-name font-weight-bold">Gruppo Bandistico Clesiano</span>
-			</a>
+    <!-- Skip link -->
+    <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-				aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <!-- Navbar -->
+   <header>
+        <nav class="navbar navbar-expand-lg py-3 fixed-top" aria-label="Navigazione principale">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand d-flex align-items-center">
+                    <div class="logo-wrapper">
+                        <img src="./images/logo.png" width="45" height="45" alt="Logo Gruppo Bandistico Clesiano">
+                    </div>
+                    <span class="navbar-name">Gruppo Bandistico Clesiano</span>
+                </a>
 
-			<div id="navbarToggler" class="collapse navbar-collapse">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Associazione
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li class="nav-drop"><a href="./chisiamo.html" class="">Chi siamo</a></li>
-							<li class="nav-drop"><a href="./concerti.html" class="">I nostri concerti</a></li>
-						</ul>
-					</li>
-					<li class="nav-item"><a href="./media.html" class="nav-link">Media</a></li>
-					<li class="nav-item"><a href="./trasparenza.html" class="nav-link">Trasparenza</a></li>
-					<li class="nav-item"><a href="./contattaci.html" class="nav-link">Contattaci</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Apri menu di navigazione">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </button>
 
-	<!-- Title -->
-	<div class="divider">
-	</div>
+                <div id="navbarToggler" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./chisiamo.html" class="nav-link"><span>Chi siamo</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Media</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
+                                <li><a href="./media.html" class="dropdown-item">Galleria</a></li>
+                                <li><a href="./concerti.html" class="dropdown-item">Concerti</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./trasparenza.html" class="nav-link"><span>Trasparenza</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contattaci.html" class="nav-link"><span>Contattaci</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-	<!-- Content -->
-	<h2 class="sec-title">Contattaci</h2>
-	<div class="page-content">
 
-		<!-- Contatti -->
-		<div class="row expl">
-			<p>Vuoi contattarci? Hai qualche curiosità da chiederci?
-				Scrivi alla nostra casella email: <a target="_blank"
-					href="mailto:gruppobandisticoclesiano@gmail.com">gruppobandisticoclesiano@gmail.com</a>.
-				Non perderti le novità, i prossimi concerti e le nostre attività: segui le pagine social della nostra
-				associazione!</p>
-		</div>
-		<div class="row expl" style="text-align: center;">
-			<div class="col-4">
-				<a class="fa fa-facebook social"></a><a target="_blank"
-					href="https://www.facebook.com/gruppobandisticoclesiano/">Pagina Facebook</a>
-			</div>
-			<div class="col-4">
-				<a class="fa fa-instagram social"></a><a target="_blank"
-					href="https://www.instagram.com/gruppobandisticoclesiano/">Pagina Instagram</a>
-			</div>
-			<div class="col-4">
-				<a class="fa fa-youtube social"></a><a target="_blank"
-					href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw">Canale Youtube</a>
-			</div>
-		</div>
-		<!-- Sede -->
-		<div class="row expl" style="margin-top: 2em;">
-			<p>Abbiamo una sede tutta nostra! Ci puoi trovare a Cles, in via Doss di Pez 22.</p>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="page-hero-overlay"></div>
+            <div class="page-hero-content">
+                <h1 class="page-title">Contattaci</h1>
+                <p class="page-subtitle">Siamo sempre felici di sentirti!</p>
+            </div>
+        </section>
 
-		</div>
-		<iframe id="map"
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d688.2808365552796!2d11.037271829241467!3d46.36694072410742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47828bfec64282bb%3A0x23918a6c6bee78ec!2sVia%20Doss%20di%20Pez%2C%2022%2C%2038023%20Cles%20TN!5e0!3m2!1sit!2sit!4v1624800451681!5m2!1sit!2sit"
-			style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Email Card -->
+                    <div class="contact-card contact-card-email">
+                        <div class="contact-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </div>
+                        <h2 class="contact-card-title">Scrivici</h2>
+                        <p class="contact-card-text">Hai domande o curiosità? Inviaci un'email e ti risponderemo al più presto.</p>
+                        <a href="mailto:gruppobandisticoclesiano@gmail.com" class="contact-link email-link">
+                            <span>gruppobandisticoclesiano@gmail.com</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
 
-	</div>
+                    <!-- Social Cards -->
+                    <div class="contact-card contact-card-social">
+                        <div class="contact-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 8a6 6 0 0 0-6-6 6 6 0 0 0-6 6c0 7-3 9-3 9h18s-3-2-3-9"/>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                            </svg>
+                        </div>
+                        <h2 class="contact-card-title">Seguici</h2>
+                        <p class="contact-card-text">Resta aggiornato sui prossimi concerti e le nostre attività.</p>
+                        
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/gruppobandisticoclesiano/" target="_blank" rel="noopener noreferrer" class="social-link social-facebook" aria-label="Seguici su Facebook">
+                                <div class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                    </svg>
+                                </div>
+                                <div class="social-info">
+                                    <span class="social-name">Facebook</span>
+                                    <span class="social-handle">@gruppobandisticoclesiano</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/gruppobandisticoclesiano/" target="_blank" rel="noopener noreferrer" class="social-link social-instagram" aria-label="Seguici su Instagram">
+                                <div class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                    </svg>
+                                </div>
+                                <div class="social-info">
+                                    <span class="social-name">Instagram</span>
+                                    <span class="social-handle">@gruppobandisticoclesiano</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw" target="_blank" rel="noopener noreferrer" class="social-link social-youtube" aria-label="Seguici su YouTube">
+                                <div class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                                    </svg>
+                                </div>
+                                <div class="social-info">
+                                    <span class="social-name">YouTube</span>
+                                    <span class="social-handle">Gruppo Bandistico Clesiano</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	<!-- Footer -->
-	<div class="footer-basic">
-		<footer>
-			<hr id="footer-div" />
-			<div class="row">
-				<div class="col-md-12 footer-social">
-					<a target="_blank" href="https://www.instagram.com/gruppobandisticoclesiano/"> <i
-							class="icon ion-social-instagram"></i></a>
-					<a href="https://www.facebook.com/gruppobandisticoclesiano" target="_blank"><i
-							class="icon ion-social-facebook"></i></a>
-					<a target="_blank" href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw"><i
-							class="icon ion-social-youtube"></i></a>
-				</div>
-			</div>
-			<p class="copyright">Gruppo Bandistico Clesiano</p>
-		</footer>
-	</div>
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-		crossorigin="anonymous"></script>
+        <!-- Location Section -->
+        <section class="location-section">
+            <div class="container">
+                <div class="location-card">
+                    <div class="location-info">
+                        <div class="location-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="location-details">
+                            <h2 class="location-title">La nostra sede</h2>
+                            <p class="location-address">
+                                <strong>Via Doss di Pez, 22</strong><br>
+                                38023 Cles (TN)<br>
+                                Trentino-Alto Adige, Italia
+                            </p>
+                            <a href="https://maps.google.com/?q=Via+Doss+di+Pez+22,+Cles+TN" target="_blank" rel="noopener noreferrer" class="directions-link">
+                                <span>Ottieni indicazioni</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="location-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d688.2808365552796!2d11.037271829241467!3d46.36694072410742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47828bfec64282bb%3A0x23918a6c6bee78ec!2sVia%20Doss%20di%20Pez%2C%2022%2C%2038023%20Cles%20TN!5e0!3m2!1sit!2sit!4v1624800451681!5m2!1sit!2sit"
+                            title="Mappa della sede del Gruppo Bandistico Clesiano"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen="">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/gruppobandisticoclesiano/" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/gruppobandisticoclesiano" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw" target="_blank" rel="noopener noreferrer" aria-label="Seguici su YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">© 2025 Gruppo Bandistico Clesiano. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>

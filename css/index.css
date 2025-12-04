@@ -1,121 +1,326 @@
-.home-col{
-  overflow: hidden;
-  resize: both;
+/* ============================================
+   CSS Custom Properties (Design Tokens)
+   ============================================ */
+:root {
+    --color-primary: #212031;
+    --color-primary-light: #2d2c42;
+    --color-accent: #ff6b6b;
+    --color-accent-hover: #ff5252;
+    --color-gold: #ffd700;
+    --color-white: #ffffff;
+    --color-text: #1a1a2e;
+    --color-text-muted: #6c6c8a;
+    
+    --glass-bg: rgba(255, 255, 255, 0.12);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.home-intro {
-  display: table-cell;
-  text-align: center;
-  width: 100%;
-  height: calc(100vh - 75px);
-  padding-top: 5vh;
-}
-.home-intro>p{  
-  font-family: 'Source Serif Pro', serif;    
-  font-size: 2em;
-}
-
-.home-col{
-  background-image: url(../images/banda_home.JPG);  
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;  
-width:99.9%;
-margin-left:0.05vw;
-}
-
-
-#discover{
-  font-size: 1.5em;
-  background-color: #212031;
-  border-color: white;
-  border-width: 3px;
+/* ============================================
+   Hero Section
+   ============================================ */
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 6rem 1.5rem 2rem;
+    background-image: 
+        linear-gradient(135deg, rgba(33, 32, 49, 0.7) 0%, rgba(33, 32, 49, 0.4) 100%),
+        url(../images/banda_home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
-
-.text-cont {
-  margin: 0 auto;
-  position:relative;
-  overflow:hidden;
+/* Animated gradient overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        45deg,
+        rgba(33, 32, 49, 0.9) 0%,
+        rgba(33, 32, 49, 0.4) 50%,
+        rgba(255, 107, 107, 0.1) 100%
+    );
+    z-index: 1;
 }
 
-.text {
-  font-family: 'Zilla Slab', serif;
-  font-size: 4em;
-  display:inline;
-  position:relative;
-  color: white !important;
-  text-shadow: 5px 0 0 #212031, -5px 0 0 #212031, 0 5px 0 #212031, 0 -5px 0 #212031, 3px 3px #212031, -3px -3px 0 #212031, 3px -3px 0 #212031, -3px 3px 0 #212031;
-
+/* Floating particles */
+.hero-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    overflow: hidden;
 }
 
-.title1 {
-  animation-name: intro;
-  animation-duration:0.4s;
-  animation-iteration-count:1;
-  animation-timing-function:ease;
-  animation-delay:0.5s;
-  animation-fill-mode:backwards;
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 215, 0, 0.6);
+    border-radius: 50%;
+    animation: float 15s infinite ease-in-out;
 }
 
-@media only screen and (max-width: 1200px) {
-  .text {
-    font-family: 'Zilla Slab', serif;
-    font-size: 3em;
-    display:inline;
-    position:relative;
-  }
+.particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; }
+.particle:nth-child(2) { left: 20%; top: 80%; animation-delay: 2s; width: 8px; height: 8px; }
+.particle:nth-child(3) { left: 60%; top: 40%; animation-delay: 4s; width: 6px; height: 6px; }
+.particle:nth-child(4) { left: 80%; top: 70%; animation-delay: 6s; width: 12px; height: 12px; }
+.particle:nth-child(5) { left: 90%; top: 10%; animation-delay: 8s; }
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(-100px) rotate(180deg);
+        opacity: 1;
+    }
 }
 
-@media only screen and (max-width: 600px) {
-  .text {
-    font-family: 'Zilla Slab', serif;
-    font-size: 2em;
-    display:inline;
-    position:relative;
-    text-shadow: 3px 0 0 #212031, -3px 0 0 #212031, 0 3px 0 #212031, 0 -3px 0 #212031, 1px 1px #212031, -1px -1px 0 #212031, 1px -1px 0 #212031, -1px 1px 0 #212031;
-  }
-  #discover{
-    font-size: 1em;
-    background-color: #212031;
-    border-color: white;
-    border-width: 3px;
-  }
+/* ============================================
+   Glass Card (Glassmorphism)
+   ============================================ */
+.hero-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 700px;
 }
 
-@media only screen and (max-width: 350px) {
-  .text {
-    font-family: 'Zilla Slab', serif;
-    font-size: 1.5em;
-    display:inline;
-    position:relative;
-  }
-  #discover{
-    font-size: 0.8em;
-    background-color: #212031;
-    border-color: white;
-    border-width: 3px;
-  }
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 24px;
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    padding: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+    animation: cardReveal 0.8s var(--transition-smooth) forwards;
+    opacity: 0;
+    transform: translateY(30px);
 }
 
-@keyframes intro {
-  0% {
-    top:150px;
-  } 
-  98% {
-    top:-5px;
-  }
-  100% {
-    top:0%;
-  }
+@keyframes cardReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Badge */
+.badge-year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    animation: fadeIn 0.5s var(--transition-smooth) 0.3s forwards;
+    opacity: 0;
+}
+
+.badge-year::before,
+.badge-year::after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes badgePop {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Title */
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 800;
+    color: var(--color-white);
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+    animation: titleSlide 0.6s var(--transition-smooth) 0.4s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes titleSlide {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title .highlight {
+    background: linear-gradient(135deg, var(--color-accent), #ff8e53);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.music-note {
+    display: inline-block;
+    margin-left: 0.5rem;
+    animation: bounce 2s infinite;
+    -webkit-text-fill-color: var(--color-gold);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 
-.title4 {
-  animation-name: intro;
-  animation-duration:0.3s;
-  animation-iteration-count:1;
-  animation-timing-function:ease;
-  animation-delay:1s;
-  animation-fill-mode:backwards;
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    animation: fadeIn 0.6s var(--transition-smooth) 0.8s forwards;
+    opacity: 0;
+}
+
+.btn-primary-custom {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, var(--color-accent), #ff8e53);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s var(--transition-smooth);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+    color: var(--color-white);
+}
+
+.btn-primary-custom svg {
+    transition: transform 0.3s var(--transition-smooth);
+}
+
+.btn-primary-custom:hover svg {
+    transform: translateX(5px);
+}
+
+.btn-secondary-custom {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.btn-secondary-custom:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-white);
+    color: var(--color-white);
+    transform: translateY(-3px);
+}
+
+/* Focus states */
+.btn-primary-custom:focus-visible,
+.btn-secondary-custom:focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 3px;
+}
+
+
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll;
+        padding-top: 5rem;
+    }
+    
+    .glass-card {
+        padding: 1.75rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+    }
+    
+    .btn-primary-custom,
+    .btn-secondary-custom {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* ============================================
+   Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    .glass-card,
+    .badge-year,
+    .hero-title,
+    .hero-subtitle,
+    .hero-cta,
+    .scroll-indicator {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    .particle {
+        animation: none;
+    }
+    
+    .music-note {
+        animation: none;
+    }
+    
+    .wheel {
+        animation: none;
+    }
 }

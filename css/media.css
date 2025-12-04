@@ -1,68 +1,706 @@
-.video-container {
+/* ============================================
+   CSS Custom Properties
+   ============================================ */
+:root {
+    --color-primary: #212031;
+    --color-primary-light: #2d2c42;
+    --color-accent: #c03440;
+    --color-accent-light: #e63946;
+    --color-youtube: #ff0000;
+    --color-white: #ffffff;
+    --color-bg: #f8f9fc;
+    --color-bg-alt: #ffffff;
+    --color-text: #1a1a2e;
+    --color-text-muted: #6c6c8a;
+    --color-border: #e5e7eb;
+    
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* ============================================
+   Media Sections
+   ============================================ */
+.media-section {
+    padding: 5rem 1rem;
+    background: var(--color-bg);
+}
+
+.media-section-alt {
+    background: var(--color-bg-alt);
+}
+
+.media-block {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.media-block-reverse {
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.media-block-reverse .media-content {
+    order: 2;
+}
+
+.media-block-reverse .media-visual {
+    order: 1;
+}
+
+/* Section Labels & Titles */
+.section-label {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.section-text {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.section-text em {
+    font-style: italic;
+    color: var(--color-text);
+}
+
+/* Video Link */
+.video-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.video-link:hover {
+    color: var(--color-accent-light);
+    gap: 0.75rem;
+}
+
+.video-link svg {
+    transition: transform 0.3s var(--transition-smooth);
+}
+
+.video-link:hover svg {
+    transform: scale(1.1);
+}
+
+/* Repertoire Tags */
+.repertoire-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    background: var(--color-bg);
+    padding: 0.375rem 0.875rem;
+    border-radius: 50px;
+    border: 1px solid var(--color-border);
+}
+
+.media-section-alt .tag {
+    background: var(--color-bg);
+}
+
+/* ============================================
+   Gallery Carousel
+   ============================================ */
+.gallery-carousel {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+#img-carousel {
+    background: var(--color-primary);
+}
+
+.carousel-inner {
+    border-radius: 20px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Carousel Caption */
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 1.5rem 1.5rem;
+    background: linear-gradient(to top, rgba(33, 32, 49, 0.95) 0%, rgba(33, 32, 49, 0.7) 60%, transparent 100%);
+    text-align: left;
+}
+
+.caption-year {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    background: rgba(192, 52, 64, 0.2);
+    padding: 0.25rem 0.625rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption h3 {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-white);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+    opacity: 0;
+    transition: opacity 0.3s var(--transition-smooth);
+}
+
+.gallery-carousel:hover .carousel-control-prev,
+.gallery-carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--color-white);
+    border-radius: 50%;
+    color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.carousel-control-prev:hover .carousel-nav-icon,
+.carousel-control-next:hover .carousel-nav-icon {
+    background: var(--color-accent);
+    color: var(--color-white);
+    transform: scale(1.1);
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    bottom: 1rem;
+    margin-bottom: 0;
+    z-index: 10;
+}
+
+.carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    margin: 0 4px;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.carousel-indicators button.active {
+    width: 24px;
+    border-radius: 4px;
+    background: var(--color-white);
+}
+
+/* ============================================
+   Video Wrapper
+   ============================================ */
+.video-wrapper {
     position: relative;
     width: 100%;
-    height: 0;
     padding-bottom: 56.25%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    background: var(--color-primary);
 }
-iframe {
+
+.video-wrapper iframe {
     position: absolute;
-    display:block;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-}
-h5{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em; 
-    background: rgba(33, 32, 49, 0.6);
-}
-
-#img-carousel{
-    position: relative;
-    width:100%;  
-}
-
-.band-img img {
-    width: auto;
-    height: 45vh;
-    max-height: 500px !important;
-    object-fit: cover;
-  }
-
-  hr{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
     border: 0;
-    border-top: 4px solid red;
-  }
+}
 
-  p{
-    font-size: 1.35em;
-    vertical-align: middle;
-  }
+/* ============================================
+   CTA Section
+   ============================================ */
+.cta-section {
+    padding: 3rem 1rem 5rem;
+    background: var(--color-bg);
+}
 
+.cta-card {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    border-radius: 24px;
+    padding: clamp(2.5rem, 6vw, 4rem);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-@media only screen and (max-width: 1024px) {
-    .video-container {
-        width: 100%;
-        margin-top: 2em;
-    }    
+.cta-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 60%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
 
-    .band-img img {
-        height: 30vh;
-      }
+.cta-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 0, 0, 0.15);
+    border-radius: 50%;
+    color: #ff4444;
+    margin-bottom: 1.5rem;
+}
 
-    p{
-        font-size: 1.1em;
-      }
-  
-    iframe {
-        left: 5%;
+.cta-card h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 0.75rem;
+}
+
+.cta-card p {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2rem;
+}
+
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.btn-youtube {
+    background: var(--color-youtube);
+    color: var(--color-white);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+}
+
+.btn-youtube:hover {
+    background: #cc0000;
+    color: var(--color-white);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+}
+
+.btn-cta svg {
+    transition: transform 0.3s var(--transition-smooth);
+}
+
+.btn-cta:hover svg {
+    transform: translate(3px, -3px);
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+.footer {
+    background: var(--color-white);
+    padding: 3rem 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-bg);
+    color: var(--color-primary);
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.footer-social a:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-3px);
+}
+
+.footer-copyright {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    margin: 0;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 900px) {
+    .media-block,
+    .media-block-reverse {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
+    
+    .media-block-reverse .media-content,
+    .media-block-reverse .media-visual {
+        order: unset;
+    }
+    
+    .media-content {
+        text-align: center;
+    }
+    
+    .repertoire-tags {
+        justify-content: center;
+    }
+    
+    .video-link {
+        justify-content: center;
+    }
+    
+    .carousel-item img {
+        height: 300px;
+    }
+}
 
-    h5{
-      margin-bottom:-4vh;
-      background: rgba(33, 32, 49, 0.6);
-      font-size: 1em;
-  }
-  }
+@media (max-width: 600px) {
+    .page-hero {
+        min-height: 35vh;
+        padding: 7rem 1.5rem 3rem;
+    }
+    
+    .media-section {
+        padding: 3rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-text {
+        font-size: 0.95rem;
+    }
+    
+    .carousel-item img {
+        height: 250px;
+    }
+    
+    .carousel-caption {
+        padding: 1.5rem 1rem 1rem;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 0.95rem;
+    }
+    
+    .carousel-nav-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .carousel-nav-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .gallery-carousel .carousel-control-prev,
+    .gallery-carousel .carousel-control-next {
+        opacity: 1;
+    }
+    
+    .video-wrapper {
+        border-radius: 16px;
+    }
+    
+    .cta-section {
+        padding: 2rem 1rem 3rem;
+    }
+    
+    .cta-card {
+        padding: 2rem 1.5rem;
+        border-radius: 16px;
+    }
+    
+    .cta-icon {
+        width: 64px;
+        height: 64px;
+    }
+    
+    .cta-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .btn-cta {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================
+   Focus States & Accessibility
+   ============================================ */
+.video-link:focus-visible,
+.btn-cta:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.carousel-control-prev:focus-visible .carousel-nav-icon,
+.carousel-control-next:focus-visible .carousel-nav-icon {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/* ============================================
+   Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    .page-title,
+    .page-subtitle {
+        animation: none;
+        opacity: 1;
+    }
+    
+    .carousel-item {
+        transition: none;
+    }
+    
+    .video-link:hover {
+        gap: 0.5rem;
+    }
+    
+    .carousel-control-prev:hover .carousel-nav-icon,
+    .carousel-control-next:hover .carousel-nav-icon {
+        transform: none;
+    }
+}
+
+/* ============================================
+   Zoom Button for Carousel
+   ============================================ */
+.carousel-item {
+    position: relative;
+}
+
+.zoom-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+    cursor: pointer;
+    z-index: 15;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s var(--transition-smooth);
+    opacity: 0;
+}
+
+.carousel-item:hover .zoom-button,
+.carousel-item.active .zoom-button {
+    opacity: 1;
+}
+
+.zoom-button:hover {
+    background: var(--color-accent);
+    color: var(--color-white);
+    transform: scale(1.1);
+}
+
+.zoom-button:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/* Mobile: Always show zoom button */
+@media (max-width: 768px) {
+    .zoom-button {
+        opacity: 1;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .zoom-button svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ============================================
+   Image Modal Styles
+   ============================================ */
+.image-modal .modal-dialog {
+    max-width: 90vw;
+}
+
+.image-modal .modal-content {
+    background: #1a1a1a;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.image-modal .modal-header {
+    background: #1a1a1a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.25rem 1.5rem;
+}
+
+.image-modal .modal-title {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.image-modal .btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    opacity: 0.8;
+    padding: 0.75rem;
+}
+
+.image-modal .btn-close:hover {
+    opacity: 1;
+}
+
+.image-modal .modal-body {
+    padding: 1.5rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.image-modal .modal-body img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Modal backdrop */
+.image-modal.show {
+    backdrop-filter: blur(8px);
+}
+
+/* Responsive modal */
+@media (max-width: 768px) {
+    .image-modal .modal-dialog {
+        max-width: 95vw;
+        margin: 1rem auto;
+    }
+    
+    .image-modal .modal-body {
+        padding: 1rem;
+    }
+    
+    .image-modal .modal-body img {
+        max-height: 70vh;
+    }
+    
+    .image-modal .modal-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-modal .modal-header {
+        padding: 1rem;
+    }
+    
+    .image-modal .modal-body {
+        padding: 0.75rem;
+    }
+    
+    .image-modal .modal-body img {
+        max-height: 65vh;
+    }
+}

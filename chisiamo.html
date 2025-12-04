@@ -1,259 +1,504 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="it">
-
 <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Storia e informazioni sul Gruppo Bandistico Clesiano - Dal 1886 ad oggi">
+    <meta name="author" content="Fabio Molignoni">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#212031">
 
-	<!-- Meta tags -->
-	<meta charset="utf-8">
-	<meta name="author" content="Fabio Molignoni">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chi siamo - Gruppo Bandistico Clesiano</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-	<!-- GBC info -->
-	<title>Gruppo Bandistico Clesiano - Chi siamo</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-	<!-- CSS -->
-	<link type="text/css" rel="stylesheet" href="./css/style.css">
-	<link type="text/css" rel="stylesheet" href="./css/chisiamo.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@600;800;900&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:700" rel="stylesheet">
-	<meta name="description"
-		content="Tutta la storia del Gruppo Bandistico Clesiano, dagli albori nel fine ottocento ai giorni nostri.">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/chisiamo.css">
 </head>
 
 <body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm fixed-top">
-		<div class="container">
-			<a href="./index.html" class="navbar-brand">
-				<!-- Logo Image -->
-				<img src="./images/logo.png" width="45" alt="" class="d-inline-block align-middle mr-2">
-				<!-- Logo Text -->
-				<span class="navbar-name font-weight-bold">Gruppo Bandistico Clesiano</span>
-			</a>
+    <!-- Skip link -->
+    <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-				aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg py-3 fixed-top" aria-label="Navigazione principale">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand d-flex align-items-center">
+                    <div class="logo-wrapper">
+                        <img src="./images/logo.png" width="45" height="45" alt="Logo Gruppo Bandistico Clesiano">
+                    </div>
+                    <span class="navbar-name">Gruppo Bandistico Clesiano</span>
+                </a>
 
-			<div id="navbarToggler" class="collapse navbar-collapse">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Associazione
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li class="nav-drop"><a href="./chisiamo.html" class="">Chi siamo</a></li>
-							<li class="nav-drop"><a href="./concerti.html" class="">I nostri concerti</a></li>
-						</ul>
-					</li>
-					<li class="nav-item"><a href="./media.html" class="nav-link">Media</a></li>
-					<li class="nav-item"><a href="./trasparenza.html" class="nav-link">Trasparenza</a></li>
-					<li class="nav-item"><a href="./contattaci.html" class="nav-link">Contattaci</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="divider">
-	</div>
-	<h2 class="sec-title">Chi siamo</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Apri menu di navigazione">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </button>
 
-	<div class="container">
-		<div class="row">
-			<p class="expl" style="margin-top: 2em;">La banda di Cles è una delle associazioni più antiche della
-				borgata: abbiamo testimonianze della sua esistenza a partire dalla fine del diciannovesimo secolo.
-				Purtroppo, a causa di un organico sempre più ridotto, l'associazione è stata sciolta negli anni '60, per
-				poi essere rifondata nel 1999. Curioso di saperne di più? Scorri la pagina e scopri la storia della
-				nostra associazione!</p>
-		</div>
-	</div>
+                <div id="navbarToggler" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./chisiamo.html" class="nav-link"><span>Chi siamo</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Media</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
+                                <li><a href="./media.html" class="dropdown-item">Galleria</a></li>
+                                <li><a href="./concerti.html" class="dropdown-item">Concerti</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./trasparenza.html" class="nav-link"><span>Trasparenza</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contattaci.html" class="nav-link"><span>Contattaci</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-	<!-- History -->
-	<section class="timeline">
-		<ul>
-			<li>
-				<div>
-					<time>1886</time>
-					<img class="hist-img" src="./images/history/1_1886.png" alt="">
-					Questa è la foto più antica del Corpo Bandistico di Cles di cui siamo a
-					conoscenza. L’anno esatto di fondazione del sodalizio musicale non ci è noto, quindi per ora la
-					nostra storia inizia da qui. In quei tempi la banda non aveva ancora un'uniforme a causa della
-					mancanza di risorse; i bandisti
-					indossavano semplicemente i loro abiti da festa. Un’altra assenza molto importante era quella delle
-					donne che solo molti anni più tardi entrarono a far parte del gruppo.
 
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>1905</time>
-					<img class="hist-img" src="./images/history/2_1905.png" alt="">
-					La banda di Cles impegnata nella processione del "Corpus Domini". Un tempo la
-					popolazione che abitava lungo le vie del paese attraversate dal corteo esponeva dei drappi sontuosi
-					alle finestre delle proprie case. Questa tradizione non è ormai più in uso, mentre quella
-					riguardante la presenza della banda permane. La banda non è un'associazione a carattere religioso,
-					non è necessario essere credenti per farne parte, basta saper suonare uno strumento musicale. Ciò
-					nonostante la sua presenza ai riti religiosi rappresenta una costante della storia della banda.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>1906</time>
-					<img class="hist-img" src="./images/history/3_1906.png" alt="">
-					Nascita dell'Unione sportiva del gruppo ciclisti a Cles. Anche in questa occasione
-					è presente la banda che arricchisce i festeggiamenti con la sua musica. Lo sport, come la musica, è
-					una delle cose più belle che l'uomo possa creare. Sembrano così distanti ma in realtà sono molto
-					vicine, quasi simili per le caratteristiche che le contraddistinguono da tutto il resto. Entrambe
-					richiedono impegno, allenamento e disciplina per ottenere buoni risultati. Entrambe insegnano valori
-					quali l'unione e l'amicizia e permettono di condividere ciò che più amiamo con persone anche molto
-					diverse dal nostro modo di essere, mettendo in secondo piano qualsiasi differenza e facendo invece
-					prevalere i punti in comune e i legami interpersonali.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>1907</time>
-					<img class="hist-img" src="./images/history/4_1907.png" alt="">
-					Grazie a questa locandina sappiamo che la banda allietava il pubblico con le sue
-					note anche a teatro. La formazione musicale, qui citata come “bandina del Ricreatorio”, rallegrava e
-					intratteneva la platea durante gli spettacoli. Questo aspetto è stato ripreso dalla banda anche in
-					tempi più moderni, con concerti “teatralizzati” come “I musicanti di Brema” e “La leggenda di San
-					Romedio”.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Anni '30</time>
-					<img class="hist-img" src="./images/history/5_30.png" alt="">
-					La banda oratoriale di Cles. In questo documento fotografico, donato alla
-					banda da Walter Dusini, si possono leggere i nomi dei bandisti della formazione musicale degli anni
-					‘30. È interessante notare che molti dei cognomi dei bandisti di allora sono i cognomi dei bandisti
-					di oggi, il che ci lega ancor di più ai nostri predecessori. Il corpo musicale operava in quegli
-					anni nell’ambito della Parrocchia e dell’Oratorio di Cles, e così fu fino allo scioglimento degli
-					anni ‘60.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Anni '50</time>
-					<img class="hist-img" src="./images/history/6_50.png" alt="">
-					La banda suona in piazza, in queste foto provenienti dall’archivio di Attilio
-					Springhetti. La formazione bandistica continuò a funzionare, con alterne fortune, fino allo
-					scioglimento del sodalizio negli anni ‘60, causato dalla mancanza di nuove leve. Pur non essendo
-					ancora dotati di una divisa, i bandisti iniziarono a essere riconoscibili per il cappello con
-					l’arpa, elemento che è stato ripreso anche nelle divise di oggi.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>1999</time>
-					<img class="hist-img" src="./images/history/7_1999.png" alt="">
-					Assente dalla metà degli anni ’60, la banda a Cles viene rifondata nel 1999 per
-					iniziativa dell’Amministrazione Comunale e della Scuola di musica Celestino Eccher con il nome di
-					Banda Giovanile di Cles, composta da venticinque ragazzi, i più piccoli dei quali frequentavano la
-					scuola elementare, i più grandi gli ultimi anni della scuola media. Sotto l’attenta ed appassionata
-					direzione del Maestro Pierpaolo Albano il gruppo a poco a poco cresce ed esordisce presso il
-					Carnevale Clesiano, a febbraio 2000. Di qui inizia a proporsi e a diventare ospite fisso di alcune
-					delle principali manifestazioni della borgata, mette in piedi il primo concerto e si appropria di
-					uno spazio nella compagine culturale clesiana.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>2000-2010</time>
-					<img class="hist-img" src="./images/history/8_2009.png" alt="">
-					Nel 2002 l’Amministrazione decide che è arrivato per la Banda il tempo di
-					camminare con le proprie gambe e invita a trasformare la Banda Giovanile di Cles in associazione,
-					sotto il nome di Gruppo Bandistico Clesiano, aperta pure all’ingresso di adulti. Il primo presidente
-					è Lauro Penasa, che rimane in carica fino al 2009. La progressiva crescita della qualità del suono
-					permette le prime uscite extra comunali e con l’andare del tempo si rafforza la presenza del Gruppo
-					Bandistico Clesiano all’interno della borgata attraverso l’organizzazione, con la collaborazione di
-					Comune e Pro Loco, di eventi e concerti, come la partecipazione alla Fiera del I Maggio, al
-					Carnevale, alla Festa dell’Assunta, alla Festa dello Sport e al concerto di Natale.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Oggi</time>
-					<img class="hist-img" src="./images/history/9_2020.png" alt="">
-					Oggi il Gruppo Bandistico Clesiano conta al proprio attivo quasi trecento
-					partecipazioni, tra uscite e concerti, ha un repertorio che supera i centottanta brani e rappresenta
-					ormai una solida realtà nel vasto panorama provinciale. Come in ogni associazione l’innesto di nuove
-					leve risulta fondamentale: per questo la banda ricerca e sostiene ogni anno l’avvicinamento alla
-					musica di nuovi allievi.
-				</div>
-			</li>
-		</ul>
-	</section>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="page-hero-overlay"></div>
+            <div class="page-hero-content">
+                <h1 class="page-title">Chi siamo</h1>
+                <p class="page-subtitle">La nostra storia, dal 1886 ad oggi</p>
+            </div>
+        </section>
 
-	<!-- Footer -->
-	<div class="footer-basic">
-		<footer>
-			<hr id="footer-div" />
-			<div class="row">
-				<div class="col-md-12 footer-social">
-					<a target="_blank" href="https://www.instagram.com/gruppobandisticoclesiano/"> <i
-							class="icon ion-social-instagram"></i></a>
-					<a href="https://www.facebook.com/gruppobandisticoclesiano" target="_blank"><i
-							class="icon ion-social-facebook"></i></a>
-					<a target="_blank" href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw"><i
-							class="icon ion-social-youtube"></i></a>
-				</div>
-			</div>
-			<p class="copyright">Gruppo Bandistico Clesiano</p>
-		</footer>
-	</div>
+        <!-- Introduction -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-card">
+                    <div class="intro-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18V5l12-2v13"/>
+                            <circle cx="6" cy="18" r="3"/>
+                            <circle cx="18" cy="16" r="3"/>
+                        </svg>
+                    </div>
+                    <p class="intro-text">
+                        La banda di Cles è una delle associazioni più antiche della borgata, con testimonianze della sua esistenza a partire dalla fine del diciannovesimo secolo. Dopo uno scioglimento negli anni '60 a causa di un organico ridotto, l'associazione è stata rifondata nel <strong>1999</strong>.
+                    </p>
+                    <div class="scroll-hint">
+                        <span>Scopri la nostra storia</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 5v14M5 12l7 7 7-7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	<script>
-		(function () {
-			"use strict";
+        <!-- Timeline -->
+        <section class="timeline-section" aria-label="Storia del Gruppo Bandistico Clesiano">
+            <div class="timeline">
+                <div class="timeline-line" aria-hidden="true"></div>
+                
+                <!-- 1886 -->
+<article class="timeline-item">
+    <div class="timeline-marker" aria-hidden="true"></div>
+    <div class="timeline-content">
+        <time datetime="1886">1886</time>
+        <div class="timeline-card">
+            <div class="timeline-image-wrapper" data-bs-toggle="modal" data-bs-target="#timelineModal" 
+                 data-image="./images/history/1_1886.png" 
+                 data-title="Prima foto conosciuta del Corpo Bandistico di Cles (1886)">
+                <figure class="timeline-image">
+                    <img src="./images/history/1_1886.png" alt="Prima foto conosciuta del Corpo Bandistico di Cles, 1886" loading="lazy">
+                </figure>
+                <button class="timeline-zoom-button" aria-label="Ingrandisci immagine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/>
+                        <line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="timeline-text">
+                <p>Questa è la foto più antica del Corpo Bandistico di Cles di cui siamo a conoscenza. L’anno esatto di fondazione del sodalizio musicale non ci è noto, quindi per ora la nostra storia inizia da qui. In quei tempi la banda non aveva ancora un'uniforme a causa della mancanza di risorse; i bandisti indossavano semplicemente i loro abiti da festa. Un’altra assenza molto importante era quella delle donne che solo molti anni più tardi entrarono a far parte del gruppo. </p>
+            </div>
+        </div>
+    </div>
+</article>
 
-			// define variables
-			var items = document.querySelectorAll(".timeline li");
+<!-- 1905 -->
+<article class="timeline-item">
+    <div class="timeline-marker" aria-hidden="true"></div>
+    <div class="timeline-content">
+        <time datetime="1905">1905</time>
+        <div class="timeline-card">
+            <div class="timeline-image-wrapper" data-bs-toggle="modal" data-bs-target="#timelineModal" 
+                 data-image="./images/history/2_1905.png" 
+                 data-title="La banda durante la processione del Corpus Domini (1905)">
+                <figure class="timeline-image">
+                    <img src="./images/history/2_1905.png" alt="La banda durante la processione del Corpus Domini, 1905" loading="lazy">
+                </figure>
+                <button class="timeline-zoom-button" aria-label="Ingrandisci immagine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/>
+                        <line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="timeline-text">
+                <p>La banda di Cles impegnata nella processione del "Corpus Domini". Un tempo la popolazione che abitava lungo le vie del paese attraversate dal corteo esponeva dei drappi sontuosi alle finestre delle proprie case. Questa tradizione non è ormai più in uso, mentre quella riguardante la presenza della banda permane. La banda non è un'associazione a carattere religioso, non è necessario essere credenti per farne parte, basta saper suonare uno strumento musicale. Ciò nonostante la sua presenza ai riti religiosi rappresenta una costante della storia della banda. </p>
+            </div>
+        </div>
+    </div>
+</article>
 
-			// check if an element is in viewport
-			// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-			function isElementInViewport(el) {
-				var rect = el.getBoundingClientRect();
-				return (
-					rect.left >= 0 &&
-					rect.top <=
-					(window.innerHeight || document.documentElement.clientHeight) &&
-					rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-				);
-			}
+<!-- 1906 -->
+<article class="timeline-item">
+    <div class="timeline-marker" aria-hidden="true"></div>
+    <div class="timeline-content">
+        <time datetime="1906">1906</time>
+        <div class="timeline-card">
+            <div class="timeline-image-wrapper" data-bs-toggle="modal" data-bs-target="#timelineModal" 
+                 data-image="./images/history/3_1906.png" 
+                 data-title="Nascita dell'Unione sportiva del gruppo ciclisti (1906)">
+                <figure class="timeline-image">
+                    <img src="./images/history/3_1906.png" alt="Nascita dell'Unione sportiva del gruppo ciclisti, 1906" loading="lazy">
+                </figure>
+                <button class="timeline-zoom-button" aria-label="Ingrandisci immagine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/>
+                        <line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="timeline-text">
+                <p>Nascita dell'Unione sportiva del gruppo ciclisti a Cles. Anche in questa occasione è presente la banda che arricchisce i festeggiamenti con la sua musica. Lo sport, come la musica, è una delle cose più belle che l'uomo possa creare. Sembrano così distanti ma in realtà sono molto vicine, quasi simili per le caratteristiche che le contraddistinguono da tutto il resto. Entrambe richiedono impegno, allenamento e disciplina per ottenere buoni risultati. Entrambe insegnano valori quali l'unione e l'amicizia e permettono di condividere ciò che più amiamo con persone anche molto diverse dal nostro modo di essere, mettendo in secondo piano qualsiasi differenza e facendo invece prevalere i punti in comune e i legami interpersonali. </p>
+            </div>
+        </div>
+    </div>
+</article>
 
-			function callbackFunc() {
-				for (var i = 0; i < items.length; i++) {
-					if (isElementInViewport(items[i])) {
-						items[i].classList.add("in-view");
-					}
-				}
-			}
+<!-- 1907 -->
+<article class="timeline-item">
+    <div class="timeline-marker" aria-hidden="true"></div>
+    <div class="timeline-content">
+        <time datetime="1907">1907</time>
+        <div class="timeline-card">
+            <div class="timeline-image-wrapper" data-bs-toggle="modal" data-bs-target="#timelineModal" 
+                 data-image="./images/history/4_1907.png" 
+                 data-title="Locandina teatrale con menzione della banda (1907)">
+                <figure class="timeline-image">
+                    <img src="./images/history/4_1907.png" alt="Locandina teatrale con menzione della banda, 1907" loading="lazy">
+                </figure>
+                <button class="timeline-zoom-button" aria-label="Ingrandisci immagine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/>
+                        <line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="timeline-text">
+                <p>Grazie a questa locandina sappiamo che la banda allietava il pubblico con le sue note anche a teatro. La formazione musicale, qui citata come “bandina del Ricreatorio”, rallegrava e intratteneva la platea durante gli spettacoli. Questo aspetto è stato ripreso dalla banda anche in tempi più moderni, con concerti “teatralizzati” come “I musicanti di Brema” e “La leggenda di San Romedio”. </p>
+            </div>
+        </div>
+    </div>
+</article>
 
-			// listen for events
-			window.addEventListener("load", callbackFunc);
-			window.addEventListener("resize", callbackFunc);
-			window.addEventListener("scroll", callbackFunc);
-		})();
-	</script>
+<!-- Anni '30 -->
+<article class="timeline-item">
+    <div class="timeline-marker" aria-hidden="true"></div>
+    <div class="timeline-content">
+        <time datetime="1930">Anni '30</time>
+        <div class="timeline-card">
+            <div class="timeline-image-wrapper" data-bs-toggle="modal" data-bs-target="#timelineModal" 
+                 data-image="./images/history/5_30.png" 
+                 data-title="La banda oratoriale di Cles negli anni '30">
+                <figure class="timeline-image">
+                    <img src="./images/history/5_30.png" alt="La banda oratoriale di Cles negli anni '30" loading="lazy">
+                </figure>
+                <button class="timeline-zoom-button" aria-label="Ingrandisci immagine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/>
+                        <line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="timeline-text">
+                <p>La banda oratoriale di Cles. In questo documento fotografico, donato alla banda da Walter Dusini, si possono leggere i nomi dei bandisti della formazione musicale degli anni ‘30. È interessante notare che molti dei cognomi dei bandisti di allora sono i cognomi dei bandisti di oggi, il che ci lega ancor di più ai nostri predecessori. Il corpo musicale operava in quegli anni nell’ambito della Parrocchia e dell’Oratorio di Cles, e così fu fino allo scioglimento degli anni ‘60. </p>
+            </div>
+        </div>
+    </div>
+</article>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-		crossorigin="anonymous"></script>
+<!-- Anni '50 -->
+<article class="timeline-item">
+    <div class="timeline-marker" aria-hidden="true"></div>
+    <div class="timeline-content">
+        <time datetime="1950">Anni '50</time>
+        <div class="timeline-card">
+            <div class="timeline-image-wrapper" data-bs-toggle="modal" data-bs-target="#timelineModal" 
+                 data-image="./images/history/6_50.png" 
+                 data-title="La banda suona in piazza negli anni '50">
+                <figure class="timeline-image">
+                    <img src="./images/history/6_50.png" alt="La banda suona in piazza negli anni '50" loading="lazy">
+                </figure>
+                <button class="timeline-zoom-button" aria-label="Ingrandisci immagine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/>
+                        <line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="timeline-text">
+                <p>La banda suona in piazza, in queste foto provenienti dall’archivio di Attilio Springhetti. La formazione bandistica continuò a funzionare, con alterne fortune, fino allo scioglimento del sodalizio negli anni ‘60, causato dalla mancanza di nuove leve. Pur non essendo ancora dotati di una divisa, i bandisti iniziarono a essere riconoscibili per il cappello con l’arpa, elemento che è stato ripreso anche nelle divise di oggi. </p>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- 1999 -->
+<article class="timeline-item timeline-item-highlight">
+    <div class="timeline-marker" aria-hidden="true"></div>
+    <div class="timeline-content">
+        <time datetime="1999">1999</time>
+        <div class="timeline-card">
+            <div class="timeline-image-wrapper" data-bs-toggle="modal" data-bs-target="#timelineModal" 
+                 data-image="./images/history/7_1999.png" 
+                 data-title="Rifondazione della banda (1999)">
+                <figure class="timeline-image">
+                    <img src="./images/history/7_1999.png" alt="Rifondazione della banda nel 1999" loading="lazy">
+                </figure>
+                <button class="timeline-zoom-button" aria-label="Ingrandisci immagine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/>
+                        <line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="timeline-text">
+                <p>Assente dalla metà degli anni ’60, la banda a Cles viene rifondata nel 1999 per iniziativa dell’Amministrazione Comunale e della Scuola di musica Celestino Eccher con il nome di Banda Giovanile di Cles, composta da venticinque ragazzi, i più piccoli dei quali frequentavano la scuola elementare, i più grandi gli ultimi anni della scuola media. Sotto l’attenta ed appassionata direzione del Maestro Pierpaolo Albano il gruppo a poco a poco cresce ed esordisce presso il Carnevale Clesiano, a febbraio 2000. Di qui inizia a proporsi e a diventare ospite fisso di alcune delle principali manifestazioni della borgata, mette in piedi il primo concerto e si appropria di uno spazio nella compagine culturale clesiana. </p>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- 2000-2010 -->
+<article class="timeline-item">
+    <div class="timeline-marker" aria-hidden="true"></div>
+    <div class="timeline-content">
+        <time datetime="2000">2000-2010</time>
+        <div class="timeline-card">
+            <div class="timeline-image-wrapper" data-bs-toggle="modal" data-bs-target="#timelineModal" 
+                 data-image="./images/history/8_2009.png" 
+                 data-title="Il Gruppo Bandistico Clesiano nel decennio 2000-2010">
+                <figure class="timeline-image">
+                    <img src="./images/history/8_2009.png" alt="Il Gruppo Bandistico Clesiano nel decennio 2000-2010" loading="lazy">
+                </figure>
+                <button class="timeline-zoom-button" aria-label="Ingrandisci immagine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/>
+                        <line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="timeline-text">
+                <p>Nel 2002 l’Amministrazione decide che è arrivato per la Banda il tempo di camminare con le proprie gambe e invita a trasformare la Banda Giovanile di Cles in associazione, sotto il nome di Gruppo Bandistico Clesiano, aperta pure all’ingresso di adulti. Il primo presidente è Lauro Penasa, che rimane in carica fino al 2009. La progressiva crescita della qualità del suono permette le prime uscite extra comunali e con l’andare del tempo si rafforza la presenza del Gruppo Bandistico Clesiano all’interno della borgata attraverso l’organizzazione, con la collaborazione di Comune e Pro Loco, di eventi e concerti, come la partecipazione alla Fiera del I Maggio, al Carnevale, alla Festa dell’Assunta, alla Festa dello Sport e al concerto di Natale. </p>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Oggi -->
+<article class="timeline-item">
+    <div class="timeline-marker" aria-hidden="true"></div>
+    <div class="timeline-content">
+        <time datetime="2024">Oggi</time>
+        <div class="timeline-card">
+            <div class="timeline-image-wrapper" data-bs-toggle="modal" data-bs-target="#timelineModal" 
+                 data-image="./images/history/9_2020.png" 
+                 data-title="Il Gruppo Bandistico Clesiano oggi">
+                <figure class="timeline-image">
+                    <img src="./images/history/9_2020.png" alt="Il Gruppo Bandistico Clesiano oggi" loading="lazy">
+                </figure>
+                <button class="timeline-zoom-button" aria-label="Ingrandisci immagine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <line x1="11" y1="8" x2="11" y2="14"/>
+                        <line x1="8" y1="11" x2="14" y2="11"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="timeline-text">
+                <p>Oggi il Gruppo Bandistico Clesiano conta al proprio attivo quasi trecento partecipazioni, tra uscite e concerti, ha un repertorio che supera i centottanta brani e rappresenta ormai una solida realtà nel vasto panorama provinciale. Come in ogni associazione l’innesto di nuove leve risulta fondamentale: per questo la banda ricerca e sostiene ogni anno l’avvicinamento alla musica di nuovi allievi. </p>
+            </div>
+        </div>
+    </div>
+</article>
+
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Vuoi far parte della nostra storia?</h2>
+                    <p>Cerchiamo sempre nuovi musicisti appassionati</p>
+                    <a href="./contattaci.html" class="btn-cta">
+                        <span>Contattaci</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for Expanded Image View -->
+<div class="modal fade timeline-modal" id="timelineModal" tabindex="-1" aria-labelledby="timelineModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="timelineModalLabel">Foto storica</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="" id="modalTimelineImage">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/gruppobandisticoclesiano/" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/gruppobandisticoclesiano" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCOmfaFXxRNBvoy282Y73JZw" target="_blank" rel="noopener noreferrer" aria-label="Seguici su YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">© 2025 Gruppo Bandistico Clesiano. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Scripts -->
+<script>
+    (function () {
+        "use strict";
+
+        // Timeline scroll animation
+        const items = document.querySelectorAll(".timeline-item");
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px 0px -100px 0px",
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                }
+            });
+        }, observerOptions);
+
+        items.forEach(item => observer.observe(item));
+
+        // Modal image handling
+        const timelineModal = document.getElementById('timelineModal');
+        
+        if (timelineModal) {
+            timelineModal.addEventListener('show.bs.modal', function (event) {
+                // Element that triggered the modal
+                const trigger = event.relatedTarget;
+                
+                // Extract info from data-* attributes
+                const imageSrc = trigger.getAttribute('data-image');
+                const imageTitle = trigger.getAttribute('data-title');
+                
+                // Update the modal's content
+                const modalImage = document.getElementById('modalTimelineImage');
+                const modalTitle = document.getElementById('timelineModalLabel');
+                
+                if (modalImage && imageSrc) {
+                    modalImage.src = imageSrc;
+                    modalImage.alt = imageTitle || 'Foto storica';
+                }
+                
+                if (modalTitle && imageTitle) {
+                    modalTitle.textContent = imageTitle;
+                }
+            });
+            
+            // Clear image when modal closes
+            timelineModal.addEventListener('hidden.bs.modal', function () {
+                const modalImage = document.getElementById('modalTimelineImage');
+                if (modalImage) {
+                    modalImage.src = '';
+                }
+            });
+        }
+    })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 </body>
-
 </html>
