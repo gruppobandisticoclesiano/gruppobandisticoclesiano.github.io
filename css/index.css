@@ -292,23 +292,45 @@
     }
 
     .hero-title {
-        font-size: clamp(2rem, 12vw, 3.35rem);
-        max-width: 10ch;
-        margin-bottom: 1.5rem;
+        font-size: clamp(1.8rem, 9.5vw, 2.65rem);
+        line-height: 1.05;
+        max-width: 12ch;
+        margin-bottom: 1.25rem;
+    }
+
+    .music-note {
+        display: none;
     }
     
     .hero-cta {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.75rem;
     }
     
     .btn-primary-custom,
     .btn-secondary-custom {
-        width: 100%;
+        flex: 1 1 0;
+        min-width: 0;
+        width: auto;
         justify-content: center;
+        padding: 0.875rem 1rem;
+        font-size: 0.9rem;
     }
     
     .scroll-indicator {
         display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .btn-primary-custom,
+    .btn-secondary-custom {
+        width: 100%;
     }
 }
 
