@@ -202,13 +202,9 @@
 .carousel-control-prev,
 .carousel-control-next {
     width: 15%;
-    opacity: 0;
-    transition: opacity 0.3s var(--transition-smooth);
-}
-
-.gallery-carousel:hover .carousel-control-prev,
-.gallery-carousel:hover .carousel-control-next {
     opacity: 1;
+    transition: opacity 0.3s var(--transition-smooth);
+    z-index: 30;
 }
 
 .carousel-nav-icon {
@@ -235,7 +231,7 @@
 .carousel-indicators {
     bottom: 1rem;
     margin-bottom: 0;
-    z-index: 10;
+    z-index: 30;
 }
 
 .carousel-indicators button {
@@ -574,32 +570,26 @@
     cursor: pointer;
     z-index: 15;
     transition: all 0.3s var(--transition-smooth);
-    opacity: 0;
     padding: 0;
 }
 
-.carousel-item:hover .zoom-button,
-.carousel-item.active .zoom-button {
+.zoom-button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(33, 32, 49, 0.3) 100%);
+    opacity: 0;
+    transition: opacity 0.3s var(--transition-smooth);
+    pointer-events: none;
+}
+
+.zoom-button:hover::after,
+.zoom-button:focus-visible::after {
     opacity: 1;
 }
 
 .zoom-button svg {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 48px;
-    height: 48px;
-    padding: 0.75rem;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 50%;
-    box-shadow: var(--shadow-md);
-    transition: all 0.3s var(--transition-smooth);
-}
-
-.zoom-button:hover svg {
-    background: var(--color-accent);
-    color: var(--color-white);
-    transform: scale(1.1);
+    display: none;
 }
 
 .zoom-button:focus-visible {
@@ -609,19 +599,12 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-    z-index: 20;
+    z-index: 30;
 }
 
-/* Mobile: Always show zoom button */
 @media (max-width: 768px) {
-    .zoom-button {
-        opacity: 1;
-    }
-    
     .zoom-button svg {
-        width: 40px;
-        height: 40px;
-        padding: 0.625rem;
+        display: none;
     }
 }
 

@@ -622,41 +622,7 @@ time {
 }
 
 .timeline-zoom-button {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.95);
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-accent);
-    cursor: pointer;
-    z-index: 10;
-    box-shadow: var(--shadow-sm);
-    opacity: 0;
-    transform: scale(0.9);
-    transition: all 0.3s var(--transition-smooth);
-    pointer-events: none;
-}
-
-.timeline-image-wrapper:hover .timeline-zoom-button {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.timeline-image-wrapper:focus-visible {
-    outline: 3px solid var(--color-accent);
-    outline-offset: 3px;
-}
-
-.timeline-zoom-button:hover {
-    background: var(--color-accent);
-    color: var(--color-white);
-    transform: scale(1.1);
+    display: none;
 }
 
 /* Hover overlay effect */
@@ -674,18 +640,9 @@ time {
     opacity: 1;
 }
 
-/* Mobile: Always show zoom button */
 @media (max-width: 768px) {
     .timeline-zoom-button {
-        opacity: 1;
-        transform: scale(1);
-        width: 36px;
-        height: 36px;
-    }
-    
-    .timeline-zoom-button svg {
-        width: 18px;
-        height: 18px;
+        display: none;
     }
 }
 
@@ -782,27 +739,11 @@ time {
         max-height: 65vh;
     }
     
-    .timeline-zoom-button {
-        top: 0.5rem;
-        right: 0.5rem;
-        width: 32px;
-        height: 32px;
-    }
-    
-    .timeline-zoom-button svg {
-        width: 16px;
-        height: 16px;
-    }
 }
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
     .timeline-zoom-button {
-        transition: opacity 0.1s;
-        transform: scale(1);
-    }
-    
-    .timeline-zoom-button:hover {
-        transform: scale(1);
+        display: none;
     }
 }
