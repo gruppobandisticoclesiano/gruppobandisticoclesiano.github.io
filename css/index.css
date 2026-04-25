@@ -176,11 +176,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    white-space: nowrap;
+}
+
+.hero-title .highlight::after {
+    content: '\00a0\266B';
+    display: inline-block;
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .music-note {
-    display: inline-block;
-    margin-left: 0.5rem;
+    display: none;
+    margin-left: 0.28em;
     animation: bounce 2s infinite;
     -webkit-text-fill-color: var(--color-gold);
 }
@@ -200,7 +210,7 @@
    ============================================ */
 .hero-cta {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1rem;
     justify-content: flex-start;
     animation: fadeIn 0.6s var(--transition-smooth) 0.8s forwards;
@@ -292,14 +302,10 @@
     }
 
     .hero-title {
-        font-size: clamp(1.8rem, 9.5vw, 2.65rem);
+        font-size: clamp(1.65rem, 8.6vw, 2.45rem);
         line-height: 1.05;
-        max-width: 12ch;
+        max-width: min(12ch, 100%);
         margin-bottom: 1.25rem;
-    }
-
-    .music-note {
-        display: none;
     }
     
     .hero-cta {
@@ -324,13 +330,14 @@
 }
 
 @media (max-width: 360px) {
-    .hero-cta {
-        flex-direction: column;
+    .hero-title {
+        font-size: clamp(1.55rem, 8vw, 2.15rem);
     }
 
     .btn-primary-custom,
     .btn-secondary-custom {
-        width: 100%;
+        padding: 0.75rem 0.65rem;
+        font-size: clamp(0.76rem, 3.4vw, 0.85rem);
     }
 }
 
