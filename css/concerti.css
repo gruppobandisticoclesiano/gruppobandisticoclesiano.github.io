@@ -198,7 +198,7 @@
     height: 64px;
     background: var(--color-white);
     border-radius: 50%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     color: var(--color-accent);

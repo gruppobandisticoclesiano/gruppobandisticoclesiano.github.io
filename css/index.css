@@ -186,6 +186,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: bounce 2s infinite;
 }
 
 .music-note {
@@ -370,7 +371,8 @@
         animation: none;
     }
     
-    .music-note {
+    .music-note,
+    .hero-title .highlight::after {
         animation: none;
     }
     
