@@ -109,7 +109,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    background: linear-gradient(135deg, #c03440, #e63946);
     transition: width 0.3s ease;
     border-radius: 1px;
 }
@@ -125,7 +125,7 @@ body {
 }
 
 .nav-link:focus-visible {
-    outline: 2px solid #ff6b6b;
+    outline: 2px solid #c03440;
     outline-offset: 2px;
 }
 
@@ -184,7 +184,7 @@ body {
     transform: translateX(-50%);
     width: 100px;
     height: 4px;
-    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    background: linear-gradient(135deg, #c03440, #e63946);
     border-radius: 2px;
 }
 
@@ -245,7 +245,7 @@ body {
 
 .footer-basic ul a:hover,
 .footer-basic ul a:focus {
-    color: #ff6b6b;
+    color: #c03440;
 }
 
 .footer-social {
@@ -366,11 +366,8 @@ button:focus-visible {
 .page-hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 80%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(192, 52, 64, 0.15) 0%, transparent 70%);
+    inset: 0;
+    background: radial-gradient(circle at 82% 35%, rgba(70, 86, 140, 0.24) 0%, rgba(70, 86, 140, 0.08) 35%, transparent 70%);
     pointer-events: none;
     z-index: 1;
 }
@@ -425,10 +422,7 @@ button:focus-visible {
     }
     
     .page-hero::before {
-        top: -30%;
-        right: -30%;
-        width: 100%;
-        height: 160%;
+        background-position: center;
     }
 }
 

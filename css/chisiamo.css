@@ -6,7 +6,7 @@
     --color-primary-light: #2d2c42;
     --color-accent: #c03440;
     --color-accent-light: #e63946;
-    --color-gold: #ffd700;
+    --color-gold: #e63946;
     --color-white: #ffffff;
     --color-bg: #f8f9fc;
     --color-text: #1a1a2e;
@@ -38,11 +38,8 @@
 .page-hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 80%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(192, 52, 64, 0.15) 0%, transparent 70%);
+    inset: 0;
+    background: radial-gradient(circle at 82% 35%, rgba(70, 86, 140, 0.24) 0%, rgba(70, 86, 140, 0.08) 35%, transparent 70%);
     pointer-events: none;
 }
 
@@ -225,7 +222,7 @@
 
 .timeline-item-highlight.in-view .timeline-marker {
     background: var(--color-gold);
-    box-shadow: 0 0 0 8px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 0 0 8px rgba(230, 57, 70, 0.3);
 }
 
 /* Timeline content */
@@ -612,8 +609,16 @@ time {
    ============================================ */
 .timeline-image-wrapper {
     position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
     cursor: pointer;
+    font: inherit;
     overflow: hidden;
+    text-align: inherit;
 }
 
 .timeline-zoom-button {
@@ -643,15 +648,15 @@ time {
     transform: scale(1);
 }
 
+.timeline-image-wrapper:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
 .timeline-zoom-button:hover {
     background: var(--color-accent);
     color: var(--color-white);
     transform: scale(1.1);
-}
-
-.timeline-zoom-button:focus-visible {
-    outline: 3px solid var(--color-accent);
-    outline-offset: 2px;
 }
 
 /* Hover overlay effect */

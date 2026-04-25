@@ -563,22 +563,19 @@
 
 .zoom-button {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 48px;
-    height: 48px;
-    background: rgba(255, 255, 255, 0.95);
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
     border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 0;
+    display: block;
     color: var(--color-accent);
     cursor: pointer;
     z-index: 15;
-    box-shadow: var(--shadow-md);
     transition: all 0.3s var(--transition-smooth);
     opacity: 0;
+    padding: 0;
 }
 
 .carousel-item:hover .zoom-button,
@@ -586,7 +583,20 @@
     opacity: 1;
 }
 
-.zoom-button:hover {
+.zoom-button svg {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.zoom-button:hover svg {
     background: var(--color-accent);
     color: var(--color-white);
     transform: scale(1.1);
@@ -594,20 +604,24 @@
 
 .zoom-button:focus-visible {
     outline: 3px solid var(--color-accent);
-    outline-offset: 3px;
+    outline-offset: -3px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 20;
 }
 
 /* Mobile: Always show zoom button */
 @media (max-width: 768px) {
     .zoom-button {
         opacity: 1;
-        width: 40px;
-        height: 40px;
     }
     
     .zoom-button svg {
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
+        padding: 0.625rem;
     }
 }
 

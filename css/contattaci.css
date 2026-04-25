@@ -6,7 +6,7 @@
     --color-primary-light: #2d2c42;
     --color-accent: #c03440;
     --color-accent-light: #e63946;
-    --color-gold: #ffd700;
+    --color-gold: #e63946;
     --color-white: #ffffff;
     --color-bg: #f8f9fc;
     --color-text: #1a1a2e;
@@ -42,11 +42,8 @@
 .page-hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 80%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(192, 52, 64, 0.15) 0%, transparent 70%);
+    inset: 0;
+    background: radial-gradient(circle at 82% 35%, rgba(70, 86, 140, 0.24) 0%, rgba(70, 86, 140, 0.08) 35%, transparent 70%);
     pointer-events: none;
 }
 
@@ -220,7 +217,7 @@
 }
 
 .social-instagram .social-icon {
-    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light), var(--color-primary-light), #515bd4);
 }
 
 .social-youtube .social-icon {

@@ -6,7 +6,7 @@
     --color-primary-light: #2d2c42;
     --color-accent: #c03440;
     --color-accent-light: #e63946;
-    --color-gold: #ffd700;
+    --color-gold: #e63946;
     --color-white: #ffffff;
     --color-bg: #f8f9fc;
     --color-text: #1a1a2e;
@@ -38,11 +38,8 @@
 .page-hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 80%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(192, 52, 64, 0.15) 0%, transparent 70%);
+    inset: 0;
+    background: radial-gradient(circle at 82% 35%, rgba(70, 86, 140, 0.24) 0%, rgba(70, 86, 140, 0.08) 35%, transparent 70%);
     pointer-events: none;
 }
 
@@ -141,12 +138,19 @@
 /* Poster Card */
 .poster-card {
     position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
     background: var(--color-white);
+    border: 0;
     border-radius: 16px;
+    color: inherit;
     overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: all 0.4s var(--transition-smooth);
     cursor: pointer;
+    font: inherit;
+    text-align: left;
 }
 
 .poster-card:hover {
@@ -557,12 +561,19 @@
 /* Update poster card to not have bottom padding */
 .poster-card {
     position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
     background: var(--color-white);
+    border: 0;
     border-radius: 16px;
+    color: inherit;
     overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: all 0.4s var(--transition-smooth);
     cursor: pointer;
+    font: inherit;
+    text-align: left;
 }
 
 /* Responsive year headers */

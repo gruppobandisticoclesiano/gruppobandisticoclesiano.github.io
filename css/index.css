@@ -4,9 +4,9 @@
 :root {
     --color-primary: #212031;
     --color-primary-light: #2d2c42;
-    --color-accent: #ff6b6b;
-    --color-accent-hover: #ff5252;
-    --color-gold: #ffd700;
+    --color-accent: #c03440;
+    --color-accent-hover: #e63946;
+    --color-gold: #e63946;
     --color-white: #ffffff;
     --color-text: #1a1a2e;
     --color-text-muted: #6c6c8a;
@@ -50,7 +50,7 @@
         45deg,
         rgba(33, 32, 49, 0.9) 0%,
         rgba(33, 32, 49, 0.4) 50%,
-        rgba(255, 107, 107, 0.1) 100%
+        rgba(192, 52, 64, 0.1) 100%
     );
     z-index: 1;
 }
@@ -67,7 +67,7 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    background: rgba(255, 215, 0, 0.6);
+    background: rgba(230, 57, 70, 0.6);
     border-radius: 50%;
     animation: float 15s infinite ease-in-out;
 }
@@ -173,7 +173,7 @@
 }
 
 .hero-title .highlight {
-    background: linear-gradient(135deg, var(--color-accent), #ff8e53);
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -212,7 +212,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: linear-gradient(135deg, var(--color-accent), #ff8e53);
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
     color: var(--color-white);
     font-family: var(--font-body);
     font-weight: 600;
@@ -221,12 +221,12 @@
     border-radius: 50px;
     text-decoration: none;
     transition: all 0.3s var(--transition-smooth);
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    box-shadow: 0 4px 15px rgba(192, 52, 64, 0.4);
 }
 
 .btn-primary-custom:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+    box-shadow: 0 8px 25px rgba(192, 52, 64, 0.5);
     color: var(--color-white);
 }
 
