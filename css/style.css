@@ -114,14 +114,21 @@ body {
     border-radius: 1px;
 }
 
-.nav-link:hover span::after,
 .nav-link.active span::after {
     width: 100%;
 }
 
-.nav-link:hover,
 .nav-link.active {
     color: white !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-link.active:hover {
+    background: transparent;
 }
 
 .nav-link:focus-visible {
