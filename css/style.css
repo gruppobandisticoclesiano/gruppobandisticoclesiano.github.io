@@ -66,6 +66,8 @@ body {
 }
 
 .logo-wrapper img {
+    width: auto;
+    height: 45px;
     border-radius: 8px;
 }
 
