@@ -1,0 +1,41 @@
+<script>
+    (function () {
+        "use strict";
+
+        const imageModal = document.getElementById("{{ include.modal_id }}");
+
+        if (!imageModal) {
+            return;
+        }
+
+        imageModal.addEventListener("show.bs.modal", function (event) {
+            const trigger = event.relatedTarget;
+
+            if (!trigger) {
+                return;
+            }
+
+            const imageSrc = trigger.getAttribute("{{ include.image_attribute }}");
+            const imageTitle = trigger.getAttribute("{{ include.title_attribute | default: 'data-title' }}");
+            const modalImage = document.getElementById("{{ include.image_id }}");
+            const modalTitle = document.getElementById("{{ include.label_id }}");
+
+            if (modalImage && imageSrc) {
+                modalImage.src = imageSrc;
+                modalImage.alt = imageTitle || "{{ include.fallback_alt }}";
+            }
+
+            if (modalTitle && imageTitle) {
+                modalTitle.textContent = imageTitle;
+            }
+        });
+
+        imageModal.addEventListener("hidden.bs.modal", function () {
+            const modalImage = document.getElementById("{{ include.image_id }}");
+
+            if (modalImage) {
+                modalImage.src = "";
+            }
+        });
+    })();
+</script>

@@ -1,0 +1,98 @@
+{% assign year = include.year %}
+{% assign collapse_id = "trans" | append: year.year %}
+
+<div class="year-accordion">
+    <button class="accordion-trigger" type="button" data-bs-toggle="collapse" data-bs-target="#{{ collapse_id }}" aria-expanded="{% if include.open %}true{% else %}false{% endif %}" aria-controls="{{ collapse_id }}">
+        <div class="accordion-year">
+            <span class="year-badge">{{ year.year }}</span>
+            <span class="year-title">{{ year.title }}</span>
+        </div>
+        <span class="accordion-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+            </svg>
+        </span>
+    </button>
+
+    <div class="collapse{% if include.open %} show{% endif %}" id="{{ collapse_id }}">
+        <div class="accordion-content">
+            <div class="table-responsive">
+                {% if year.type == "simple" %}
+                    <table class="data-table data-table-simple">
+                        <thead>
+                            <tr>
+                                <th scope="col">Entrata</th>
+                                <th scope="col" class="text-end">Importo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for entry in year.entries %}
+                                <tr>
+                                    <td data-label="Entrata">{{ entry.label }}</td>
+                                    <td data-label="Importo" class="text-end"><span class="amount">{{ entry.amount }}</span></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                        {% if year.total %}
+                            <tfoot>
+                                <tr>
+                                    <td><strong>{{ year.total.label }}</strong></td>
+                                    <td class="text-end"><span class="amount amount-total">{{ year.total.amount }}</span></td>
+                                </tr>
+                            </tfoot>
+                        {% endif %}
+                    </table>
+                {% else %}
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Soggetto erogante</th>
+                                <th scope="col">Somma incassata</th>
+                                <th scope="col">Data</th>
+                                <th scope="col">Causale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for entry in year.entries %}
+                                <tr>
+                                    <td data-label="Soggetto erogante">
+                                        <span class="entity-name">{{ entry.entity }}</span>
+                                    </td>
+                                    <td data-label="Somma incassata">
+                                        <span class="amount {{ entry.amount_class }}">{{ entry.amount }}</span>
+                                    </td>
+                                    <td data-label="Data">
+                                        <span class="date">{{ entry.date }}</span>
+                                    </td>
+                                    <td data-label="Causale">{{ entry.reason }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                        {% if year.total %}
+                            <tfoot>
+                                <tr>
+                                    <td><strong>{{ year.total.label }}</strong></td>
+                                    <td><span class="amount amount-total">{{ year.total.amount }}</span></td>
+                                    <td colspan="2"></td>
+                                </tr>
+                            </tfoot>
+                        {% endif %}
+                    </table>
+                {% endif %}
+            </div>
+
+            {% if year.note %}
+                <div class="note-card">
+                    <div class="note-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="16" x2="12" y2="12"/>
+                            <line x1="12" y1="8" x2="12.01" y2="8"/>
+                        </svg>
+                    </div>
+                    <p>{{ year.note }}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

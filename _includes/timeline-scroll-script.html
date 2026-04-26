@@ -1,0 +1,40 @@
+<script>
+    (function () {
+        "use strict";
+
+        const items = document.querySelectorAll(".timeline-item");
+
+        if (!items.length) {
+            return;
+        }
+
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px 0px -100px 0px",
+            threshold: 0.1
+        };
+
+        if (!("IntersectionObserver" in window)) {
+            items.forEach(item => item.classList.add("in-view"));
+            return;
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        items.forEach((item, index) => {
+            if (index === 0) {
+                item.classList.add("in-view");
+                return;
+            }
+
+            observer.observe(item);
+        });
+    })();
+</script>

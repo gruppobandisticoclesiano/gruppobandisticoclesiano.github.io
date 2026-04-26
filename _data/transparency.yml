@@ -1,0 +1,91 @@
+years:
+  - year: 2024
+    title: "Contributi anno sociale 2024"
+    type: contributions
+    entries:
+      - entity: "Comune di Cles"
+        amount: "Non quantificabile"
+        amount_class: "amount-special"
+        date: "01/07/2024"
+        reason: "Concessione gratuita di occupazione ed utilizzo di sala prove, situata in via Doss di Pez 22, come da accordi di convenzione stipulata il 01/07/24"
+
+  - year: 2023
+    title: "Contributi anno sociale 2023"
+    type: contributions
+    entries:
+      - entity: "Comune di Cles"
+        amount: "Non quantificabile"
+        amount_class: "amount-special"
+        date: "27/04/2023"
+        reason: "Concessione gratuita di occupazione ed utilizzo di sala prove, situata in via Doss di Pez 22, come da accordi di convenzione stipulata il 27/04/23"
+
+  - year: 2022
+    title: "Contributi anno sociale 2022"
+    type: contributions
+    entries:
+      - entity: "Comune di Cles"
+        amount: "Non quantificabile"
+        amount_class: "amount-special"
+        date: "01/01/2022"
+        reason: "Concessione gratuita di occupazione ed utilizzo di sala prove, situata in via Doss di Pez 22, come da accordi di convenzione stipulata il 01/01/19"
+      - entity: "Comune di Cles"
+        amount: "€ 2.500,00"
+        date: "21/01/2022"
+        reason: "Saldo contributo ordinario anno 2021 come da convenzione con Comune di Cles stipulata il 01/01/19"
+      - entity: "Comune di Cles"
+        amount: "€ 1.999,40"
+        date: "17/03/2022"
+        reason: "Rimborso progetto \"Piano giovani di zona\" - Call anno 2021"
+      - entity: "Comune di Cles"
+        amount: "€ 2.500,00"
+        date: "21/09/2022"
+        reason: "Acconto contributo ordinario anno 2022 come da convenzione con Comune di Cles stipulata il 01/01/19"
+      - entity: "Comune di Cles"
+        amount: "€ 2.500,00"
+        date: "22/12/2022"
+        reason: "Saldo contributo ordinario anno 2022 come da convenzione con Comune di Cles stipulata il 01/01/19"
+    total:
+      label: "Totale contributi monetari 2022"
+      amount: "€ 9.499,40"
+
+  - year: 2021
+    title: "Entrate effettive anno sociale 2021"
+    type: simple
+    entries:
+      - label: "Tesseramenti"
+        amount: "€ 160,00"
+      - label: "Quote per corsi di formazione"
+        amount: "€ 4.680,00"
+      - label: "Contributi da enti pubblici"
+        amount: "€ 4.000,00"
+      - label: "Contributo ordinario da convenzione Comune di Cles"
+        amount: "€ 5.000,00"
+      - label: "Contributi da enti privati"
+        amount: "€ 1.000,00"
+      - label: "Compensi relativi a prestazioni musicali"
+        amount: "€ 550,00"
+    total:
+      label: "Totale entrate anno 2021"
+      amount: "€ 15.390,00"
+    note: "Concessione <strong>gratuita</strong> di occupazione ed utilizzo di sala prove, situata in via Doss di Pez 22, come da accordi di convenzione tra l'associazione e il Comune di Cles, per un valore equivalente di <strong>€ 4.900,00</strong>."
+
+  - year: 2020
+    title: "Entrate effettive anno sociale 2020"
+    type: simple
+    entries:
+      - label: "Tesseramenti"
+        amount: "€ 160,00"
+      - label: "Quote per corsi di formazione"
+        amount: "€ 4.380,00"
+      - label: "Contributi da enti pubblici"
+        amount: "€ 6.252,00"
+      - label: "Contributo ordinario da convenzione Comune di Cles"
+        amount: "€ 5.000,00"
+      - label: "Contributi da enti privati"
+        amount: "€ 1.000,00"
+      - label: "Compensi relativi a prestazioni musicali"
+        amount: "€ 1.100,00"
+    total:
+      label: "Totale entrate anno 2020"
+      amount: "€ 17.892,00"
+    note: "Concessione <strong>gratuita</strong> di occupazione ed utilizzo di sala prove, situata in via Doss di Pez 22, come da accordi di convenzione tra l'associazione e il Comune di Cles, per un valore equivalente di <strong>€ 4.900,00</strong>."
