@@ -1,0 +1,9 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+Gemfile.lock
+.jekyll-serve.log
+.jekyll-serve.err.log
+.static-serve.log
+.static-serve.err.log

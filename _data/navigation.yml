@@ -1,0 +1,21 @@
+- title: Home
+  url: /
+  key: home
+- title: Chi siamo
+  url: /chisiamo.html
+  key: chisiamo
+- title: Media
+  key: media
+  children:
+    - title: Galleria
+      url: /media.html
+      key: media
+    - title: Concerti
+      url: /concerti.html
+      key: concerti
+- title: Trasparenza
+  url: /trasparenza.html
+  key: trasparenza
+- title: Contattaci
+  url: /contattaci.html
+  key: contattaci
