@@ -7,7 +7,7 @@ author: Fabio Molignoni
 email: gruppobandisticoclesiano@gmail.com
 theme_color: "#212031"
 logo: /images/logo.png
-default_image: /images/banda_home.jpg
+default_image: /images/banda_home.JPG
 
 social:
   instagram: https://www.instagram.com/gruppobandisticoclesiano/
@@ -26,7 +26,7 @@ defaults:
       path: ""
     values:
       layout: default
-      image: /images/banda_home.jpg
+      image: /images/banda_home.JPG
 
 exclude:
   - README.md
