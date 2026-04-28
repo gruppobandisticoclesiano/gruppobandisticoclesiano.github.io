@@ -5,5 +5,9 @@ _site/
 Gemfile.lock
 .jekyll-serve.log
 .jekyll-serve.err.log
+.jekyll-serve-*.log
+.jekyll-serve-*.err.log
 .static-serve.log
 .static-serve.err.log
+.static-serve-*.log
+.static-serve-*.err.log
