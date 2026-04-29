@@ -69,6 +69,32 @@ Con Ruby 3.x potrebbe essere necessario installare `webrick` una volta:
 gem install webrick
 ```
 
+## Ottimizzazione immagini
+
+Per generare versioni WebP delle immagini del sito da PowerShell:
+
+```powershell
+.\scripts\convert-images-to-webp.cmd
+```
+
+Lo script converte i file `.jpg`, `.jpeg` e `.png` dentro `images/`, creando un file `.webp` accanto all'originale. Se il WebP esiste gia' ed e' piu' recente dell'originale viene saltato.
+
+Opzioni utili:
+
+```powershell
+.\scripts\convert-images-to-webp.cmd -Quality 78
+.\scripts\convert-images-to-webp.cmd -Force
+.\scripts\convert-images-to-webp.cmd -WhatIf
+```
+
+Lo script usa `cwebp` se disponibile, altrimenti `ffmpeg`.
+
+Se si preferisce lanciare direttamente il file `.ps1`, PowerShell potrebbe bloccarlo per policy di sicurezza. In quel caso usare:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\Convert-ImagesToWebP.ps1
+```
+
 ## Pubblicazione
 
 GitHub Pages deve pubblicare dalla root del branch configurato per il sito.

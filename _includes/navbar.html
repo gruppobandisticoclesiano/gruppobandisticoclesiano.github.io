@@ -1,9 +1,9 @@
 <header>
     <nav class="navbar navbar-expand-lg py-3 fixed-top" aria-label="Navigazione principale">
         <div class="container">
-            <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <a href="index.html" data-root-href="{{ '/' | relative_url }}" class="navbar-brand d-flex align-items-center">
                 <div class="logo-wrapper">
-                    <img src="images/logo.png" width="40" height="45" alt="Logo {{ site.title }}">
+                    <img src="{{ site.logo | remove_first: '/' }}" data-root-src="{{ site.logo | relative_url }}" width="40" height="45" alt="Logo {{ site.title }}">
                 </div>
                 <span class="navbar-name">{{ site.title }}</span>
             </a>
@@ -32,13 +32,13 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ item.key | capitalize }}">
                             {% for child in item.children %}
-                            <li><a href="{{ child.url | remove_first: '/' }}" class="dropdown-item{% if page.nav == child.key %} active{% endif %}"{% if page.nav == child.key %} aria-current="page"{% endif %}>{{ child.title }}</a></li>
+                            <li><a href="{{ child.url | remove_first: '/' }}" data-root-href="{{ child.url | relative_url }}" class="dropdown-item{% if page.nav == child.key %} active{% endif %}"{% if page.nav == child.key %} aria-current="page"{% endif %}>{{ child.title }}</a></li>
                             {% endfor %}
                         </ul>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a href="{% if item.url == '/' %}index.html{% else %}{{ item.url | remove_first: '/' }}{% endif %}" class="nav-link{% if page.nav == item.key %} active{% endif %}"{% if page.nav == item.key %} aria-current="page"{% endif %}><span>{{ item.title }}</span></a>
+                        <a href="{% if item.url == '/' %}index.html{% else %}{{ item.url | remove_first: '/' }}{% endif %}" data-root-href="{{ item.url | relative_url }}" class="nav-link{% if page.nav == item.key %} active{% endif %}"{% if page.nav == item.key %} aria-current="page"{% endif %}><span>{{ item.title }}</span></a>
                     </li>
                     {% endif %}
                     {% endfor %}

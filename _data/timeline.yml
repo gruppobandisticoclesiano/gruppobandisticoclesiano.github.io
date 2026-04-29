@@ -1,48 +1,48 @@
 - label: "1886"
   datetime: "1886"
-  image: "./images/history/1_1886.png"
+  image: "images/history/1_1886.webp"
   title: "Prima foto conosciuta del Corpo Bandistico di Cles (1886)"
   alt: "Prima foto conosciuta del Corpo Bandistico di Cles, 1886"
   text: >-
     Questa è la foto più antica del Corpo Bandistico di Cles di cui siamo a conoscenza. L’anno esatto di fondazione del sodalizio musicale non ci è noto, quindi per ora la nostra storia inizia da qui. In quei tempi la banda non aveva ancora un'uniforme a causa della mancanza di risorse; i bandisti indossavano semplicemente i loro abiti da festa. Un’altra assenza molto importante era quella delle donne che solo molti anni più tardi entrarono a far parte del gruppo.
 - label: "1905"
   datetime: "1905"
-  image: "./images/history/2_1905.png"
+  image: "images/history/2_1905.webp"
   title: "La banda durante la processione del Corpus Domini (1905)"
   alt: "La banda durante la processione del Corpus Domini, 1905"
   text: >-
     La banda di Cles impegnata nella processione del "Corpus Domini". Un tempo la popolazione che abitava lungo le vie del paese attraversate dal corteo esponeva dei drappi sontuosi alle finestre delle proprie case. Questa tradizione non è ormai più in uso, mentre quella riguardante la presenza della banda permane. La banda non è un'associazione a carattere religioso, non è necessario essere credenti per farne parte, basta saper suonare uno strumento musicale. Ciò nonostante la sua presenza ai riti religiosi rappresenta una costante della storia della banda.
 - label: "1906"
   datetime: "1906"
-  image: "./images/history/3_1906.png"
+  image: "images/history/3_1906.webp"
   title: "Nascita dell'Unione sportiva del gruppo ciclisti (1906)"
   alt: "Nascita dell'Unione sportiva del gruppo ciclisti, 1906"
   text: >-
     Nascita dell'Unione sportiva del gruppo ciclisti a Cles. Anche in questa occasione è presente la banda che arricchisce i festeggiamenti con la sua musica. Lo sport, come la musica, è una delle cose più belle che l'uomo possa creare. Sembrano così distanti ma in realtà sono molto vicine, quasi simili per le caratteristiche che le contraddistinguono da tutto il resto. Entrambe richiedono impegno, allenamento e disciplina per ottenere buoni risultati. Entrambe insegnano valori quali l'unione e l'amicizia e permettono di condividere ciò che più amiamo con persone anche molto diverse dal nostro modo di essere, mettendo in secondo piano qualsiasi differenza e facendo invece prevalere i punti in comune e i legami interpersonali.
 - label: "1907"
   datetime: "1907"
-  image: "./images/history/4_1907.png"
+  image: "images/history/4_1907.webp"
   title: "Locandina teatrale con menzione della banda (1907)"
   alt: "Locandina teatrale con menzione della banda, 1907"
   text: >-
     Grazie a questa locandina sappiamo che la banda allietava il pubblico con le sue note anche a teatro. La formazione musicale, qui citata come “bandina del Ricreatorio”, rallegrava e intratteneva la platea durante gli spettacoli. Questo aspetto è stato ripreso dalla banda anche in tempi più moderni, con concerti “teatralizzati” come “I musicanti di Brema” e “La leggenda di San Romedio”.
 - label: "Anni '30"
   datetime: "1930"
-  image: "./images/history/5_30.png"
+  image: "images/history/5_30.webp"
   title: "La banda oratoriale di Cles negli anni '30"
   alt: "La banda oratoriale di Cles negli anni '30"
   text: >-
     La banda oratoriale di Cles. In questo documento fotografico, donato alla banda da Walter Dusini, si possono leggere i nomi dei bandisti della formazione musicale degli anni ‘30. È interessante notare che molti dei cognomi dei bandisti di allora sono i cognomi dei bandisti di oggi, il che ci lega ancor di più ai nostri predecessori. Il corpo musicale operava in quegli anni nell’ambito della Parrocchia e dell’Oratorio di Cles, e così fu fino allo scioglimento degli anni ‘60.
 - label: "Anni '50"
   datetime: "1950"
-  image: "./images/history/6_50.jpg"
+  image: "images/history/6_50.webp"
   title: "La banda suona in piazza negli anni '50"
   alt: "La banda suona in piazza negli anni '50"
   text: >-
     La banda suona in piazza, in queste foto provenienti dall’archivio di Attilio Springhetti. La formazione bandistica continuò a funzionare, con alterne fortune, fino allo scioglimento del sodalizio negli anni ‘60, causato dalla mancanza di nuove leve. Pur non essendo ancora dotati di una divisa, i bandisti iniziarono a essere riconoscibili per il cappello con l’arpa, elemento che è stato ripreso anche nelle divise di oggi.
 - label: "1999"
   datetime: "1999"
-  image: "./images/history/7_1999.png"
+  image: "images/history/7_1999.webp"
   title: "Rifondazione della banda (1999)"
   alt: "Rifondazione della banda nel 1999"
   highlight: true
@@ -50,14 +50,14 @@
     Assente dalla metà degli anni ’60, la banda a Cles viene rifondata nel 1999 per iniziativa dell’Amministrazione Comunale e della Scuola di musica Celestino Eccher con il nome di Banda Giovanile di Cles, composta da venticinque ragazzi, i più piccoli dei quali frequentavano la scuola elementare, i più grandi gli ultimi anni della scuola media. Sotto l’attenta ed appassionata direzione del Maestro Pierpaolo Albano il gruppo a poco a poco cresce ed esordisce presso il Carnevale Clesiano, a febbraio 2000. Di qui inizia a proporsi e a diventare ospite fisso di alcune delle principali manifestazioni della borgata, mette in piedi il primo concerto e si appropria di uno spazio nella compagine culturale clesiana.
 - label: "2000-2010"
   datetime: "2000"
-  image: "./images/history/8_2009.jpg"
+  image: "images/history/8_2009.webp"
   title: "Il Gruppo Bandistico Clesiano nel decennio 2000-2010"
   alt: "Il Gruppo Bandistico Clesiano nel decennio 2000-2010"
   text: >-
     Nel 2002 l’Amministrazione decide che è arrivato per la Banda il tempo di camminare con le proprie gambe e invita a trasformare la Banda Giovanile di Cles in associazione, sotto il nome di Gruppo Bandistico Clesiano, aperta pure all’ingresso di adulti. Il primo presidente è Lauro Penasa, che rimane in carica fino al 2009. La progressiva crescita della qualità del suono permette le prime uscite extra comunali e con l’andare del tempo si rafforza la presenza del Gruppo Bandistico Clesiano all’interno della borgata attraverso l’organizzazione, con la collaborazione di Comune e Pro Loco, di eventi e concerti, come la partecipazione alla Fiera del I Maggio, al Carnevale, alla Festa dell’Assunta, alla Festa dello Sport e al concerto di Natale.
 - label: "Oggi"
   datetime: "2024"
-  image: "./images/history/9_2020.jpg"
+  image: "images/history/9_2020.webp"
   title: "Il Gruppo Bandistico Clesiano oggi"
   alt: "Il Gruppo Bandistico Clesiano oggi"
   text: >-

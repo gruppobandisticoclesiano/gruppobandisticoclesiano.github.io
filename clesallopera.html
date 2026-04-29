@@ -1,0 +1,84 @@
+---
+title: "Cles all'Opera - Gruppo Bandistico Clesiano"
+description: "Testi dei brani del progetto Cles all'Opera"
+nav: ""
+css: "css/clesallopera.css"
+permalink: "/clesallopera.html"
+sitemap: false
+robots: "noindex, follow"
+---
+<main id="main-content">
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <h1 class="page-title">Cles all'Opera</h1>
+            <p class="page-subtitle">Testi dei brani</p>
+        </div>
+    </section>
+
+    <section class="opera-section">
+        <div class="container">
+            <div class="opera-reader">
+                <p class="reader-intro">
+                    Seleziona il brano in programma per leggere il testo durante il concerto.
+                </p>
+
+                <div class="song-selector">
+                    <label for="song-select">Brano</label>
+                    <select id="song-select" aria-controls="song-panels">
+                        {% for song in site.data.clesallopera %}
+                        <option value="{{ song.number }}">{{ song.number }} - {{ song.title }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="song-tabs" aria-live="polite">
+                    <div class="song-panels">
+                        {% for song in site.data.clesallopera %}
+                        <article class="song-panel{% if forloop.first %} is-active{% endif %}" data-song="{{ song.number }}">
+                        <header class="song-header">
+                            <div>
+                                <p class="song-number">Brano {{ song.number }}</p>
+                                <h2>{{ song.title }}</h2>
+                                <p class="song-subtitle">{{ song.opera }} &middot; {{ song.composer }}</p>
+                            </div>
+                        </header>
+
+                        <div class="song-text" aria-label="Testo {{ song.title }}">
+                            {% for stanza in song.text %}
+                            <p>{{ stanza }}</p>
+                            {% endfor %}
+                        </div>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    (function () {
+        "use strict";
+
+        const select = document.getElementById("song-select");
+        const panels = document.querySelectorAll(".song-panel");
+
+        if (!select || !panels.length) {
+            return;
+        }
+
+        function showSong(songNumber) {
+            panels.forEach(function (panel) {
+                panel.classList.toggle("is-active", panel.dataset.song === songNumber);
+            });
+        }
+
+        select.addEventListener("change", function () {
+            showSong(select.value);
+        });
+
+        showSong(select.value);
+    })();
+</script>

@@ -1,0 +1,205 @@
+/* ============================================
+   Cles all'Opera
+   ============================================ */
+.page-hero {
+    min-height: 28vh;
+    padding: 6.25rem 1rem 2rem;
+}
+
+.opera-section {
+    min-height: 60vh;
+    padding: 1.25rem 0 3rem;
+    background: var(--color-bg);
+}
+
+.opera-section .container {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+.opera-reader {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.reader-intro {
+    margin: 0 0 1rem;
+    padding: 0.85rem 1rem;
+    background: var(--color-white);
+    border: 1px solid rgba(33, 32, 49, 0.08);
+    border-radius: 14px;
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    box-shadow: var(--shadow-sm);
+}
+
+.song-selector {
+    margin-bottom: 1rem;
+    padding: 0.85rem;
+    background: var(--color-white);
+    border: 1px solid rgba(33, 32, 49, 0.08);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+}
+
+.song-selector label {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.song-selector select {
+    width: 100%;
+    min-height: 3.2rem;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid rgba(33, 32, 49, 0.12);
+    border-radius: 12px;
+    background: var(--color-white);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.song-selector select:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.song-panels {
+    min-width: 0;
+}
+
+.song-panel {
+    display: none;
+    min-width: 0;
+    padding: 1rem;
+    background: var(--color-white);
+    border: 1px solid rgba(33, 32, 49, 0.08);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    overflow-wrap: anywhere;
+}
+
+.song-panel.is-active {
+    display: block;
+}
+
+.song-header {
+    margin-bottom: 1rem;
+}
+
+.song-number {
+    margin: 0 0 0.35rem;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.song-header h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.45rem, 7vw, 1.95rem);
+    line-height: 1.1;
+    color: var(--color-primary);
+}
+
+.song-subtitle {
+    margin: 0.4rem 0 0;
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.song-text {
+    padding: 0.95rem;
+    background: #fffdfb;
+    border-left: 4px solid var(--color-accent);
+    border-radius: 12px;
+}
+
+.song-text p {
+    margin: 0 0 1.1rem;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: clamp(1.08rem, 4.8vw, 1.22rem);
+    line-height: 1.75;
+}
+
+.song-text p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 900px) {
+    .page-hero {
+        min-height: 42vh;
+        padding: 8rem 2rem 4rem;
+    }
+
+    .opera-section {
+        padding: 3rem 1rem 5rem;
+    }
+
+    .reader-intro {
+        font-size: 1rem;
+    }
+
+    .song-selector {
+        padding: 1rem;
+    }
+
+    .song-panel {
+        padding: 1.5rem;
+    }
+
+    .song-text {
+        padding: 1.5rem;
+    }
+}
+
+@media print {
+    .navbar,
+    .footer,
+    .reader-intro,
+    .song-selector {
+        display: none !important;
+    }
+
+    body,
+    .opera-section {
+        background: white;
+    }
+
+    .page-hero {
+        min-height: 0;
+        padding: 1rem 0;
+        background: white;
+    }
+
+    .page-title,
+    .page-subtitle {
+        color: black;
+        animation: none;
+        opacity: 1;
+    }
+
+    .song-panel {
+        display: block !important;
+        box-shadow: none;
+        border: 1px solid #ddd;
+        margin-bottom: 1rem;
+        break-inside: avoid;
+    }
+}

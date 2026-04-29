@@ -5,10 +5,11 @@ nav: "home"
 css: "css/index.css"
 permalink: "/"
 hide_footer: true
+preload_image: "images/banda_home.webp"
 ---
 <main id="main-content">
     <section class="hero-section">
-        <!-- Decorative elements -->
+        <img class="hero-media" src="images/banda_home.webp" width="1920" height="1131" alt="" fetchpriority="high" decoding="async" aria-hidden="true">
         <div class="hero-overlay"></div>
 
         
@@ -20,13 +21,13 @@ hide_footer: true
                     <span class="music-note" aria-hidden="true">♫</span>
                 </h1>
                 <div class="hero-cta">
-                    <a href="./chisiamo.html" class="btn-primary-custom">
+                    <a href="chisiamo.html" data-root-href="{{ '/chisiamo.html' | relative_url }}" class="btn-primary-custom">
                         <span>Scopri di più</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
-                    <a href="./contattaci.html" class="btn-secondary-custom">Contattaci</a>
+                    <a href="contattaci.html" data-root-href="{{ '/contattaci.html' | relative_url }}" class="btn-secondary-custom">Contattaci</a>
                 </div>
             </div>
         </div>

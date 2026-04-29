@@ -4,6 +4,7 @@ description: "Foto, video e registrazioni dei concerti del Gruppo Bandistico Cle
 nav: "media"
 css: "css/media.css"
 permalink: "/media.html"
+preload_image: "images/media/2019_anniversario.webp"
 ---
 <main id="main-content">
         <!-- Hero Section -->
@@ -36,7 +37,7 @@ permalink: "/media.html"
     <div class="carousel-inner">
         {% for item in site.data.media_gallery %}
         <div class="carousel-item{% if forloop.first %} active{% endif %}">
-            <img src="{{ item.image }}" class="d-block w-100" alt="{{ item.alt | escape }}">
+            <img src="{{ item.image }}" class="d-block w-100" alt="{{ item.alt | escape }}" decoding="async"{% if forloop.first %} loading="eager" fetchpriority="high"{% else %} loading="lazy" fetchpriority="low"{% endif %}>
             <button type="button" class="zoom-button" data-bs-toggle="modal" data-bs-target="#imageModal"
                 data-image="{{ item.image }}"
                 data-title="{{ item.title | escape }}"
@@ -82,7 +83,7 @@ permalink: "/media.html"
                 <div class="media-visual">
                     <div class="video-wrapper">
                         <iframe 
-                        src="https://www.youtube.com/embed/DI1BWvurWYI" 
+                        src="https://www.youtube-nocookie.com/embed/DI1BWvurWYI" 
                         title="Come si diventa bandisti - Documentario del Gruppo Bandistico Clesiano"
                         loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -107,7 +108,7 @@ permalink: "/media.html"
                 <div class="media-visual">
                     <div class="video-wrapper">
                         <iframe 
-                        src="https://www.youtube.com/embed/Hw6cTgrMSDU" 
+                        src="https://www.youtube-nocookie.com/embed/Hw6cTgrMSDU" 
                         title="I Musicanti di Brema - Spettacolo del Gruppo Bandistico Clesiano"
                         loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -138,7 +139,7 @@ permalink: "/media.html"
                 <div class="media-visual">
                     <div class="video-wrapper">
                         <iframe 
-                        src="https://www.youtube.com/embed/videoseries?list=PLK6cdpySf0qcgxrWTnjbierRy0VMYOdAz" 
+                        src="https://www.youtube-nocookie.com/embed/videoseries?list=PLK6cdpySf0qcgxrWTnjbierRy0VMYOdAz" 
                         title="Playlist delle registrazioni del Gruppo Bandistico Clesiano"
                         loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

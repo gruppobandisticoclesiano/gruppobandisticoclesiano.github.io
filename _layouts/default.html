@@ -10,6 +10,23 @@
     {% unless page.hide_footer %}
     {% include footer.html %}
     {% endunless %}
+    <script>
+        (function () {
+            "use strict";
+
+            if (window.location.protocol === "file:") {
+                return;
+            }
+
+            document.querySelectorAll("[data-root-href]").forEach(function (element) {
+                element.setAttribute("href", element.getAttribute("data-root-href"));
+            });
+
+            document.querySelectorAll("[data-root-src]").forEach(function (element) {
+                element.setAttribute("src", element.getAttribute("data-root-src"));
+            });
+        })();
+    </script>
     {% include bootstrap.html %}
 </body>
 </html>
